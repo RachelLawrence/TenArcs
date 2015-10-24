@@ -15,5 +15,6 @@
 }
 
 table.points td {
-	padding: 3px;
+	padding: 1px;
+	text-align: center;
 }
