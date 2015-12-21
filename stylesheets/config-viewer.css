@@ -1,0 +1,20 @@
+.nav-pills {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.nav-pills a {
+	display: block;
+	cursor: pointer;
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+	border: 1px solid #ccc;
+}
+
+table.points td {
+	padding: 1px;
+	text-align: center;
+}
