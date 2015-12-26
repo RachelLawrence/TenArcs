@@ -14,10 +14,10 @@ def vertex_normalize (G):
                 break
         if valid == 1:
             #try each of these triples
-            for threeEdge in range(11,21):
-                if len(D[threeEdge]) == 3 and Set([p1234[2], p1234[3]]).issubset(Set(D[threeEdge])):
+            for threeEdge in D.values():
+                if len(threeEdge) == 3 and Set([p1234[2], p1234[3]]).issubset(Set(threeEdge)):
                     #1, 2, 3, 4, and 5 are now defined. Just need to check if 145 is a triple
-                    five = Set(D[threeEdge]).difference(Set([p1234[2], p1234[3]]))
+                    five = Set(threeEdge).difference(Set([p1234[2], p1234[3]]))
                     fiveList = five.list()
                     for val in D.values():
                         for f in fiveList:

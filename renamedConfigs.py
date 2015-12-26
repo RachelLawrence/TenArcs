@@ -1,6 +1,6 @@
 #Naming convention:
 #1 through 10 are the names of the points in the configuration
-#11 through 21 are the names of the lines in the configuration
+#11 through 21+ are the names of the lines in the configuration
 #Example:
 #			4:[12, 11, 13, 14] means that point 4 is on lines 12, 11, 13, and 14 (only)
 #			18:[2, 3, 5] means that line 18 contains points 2, 3, and 5 (only)
