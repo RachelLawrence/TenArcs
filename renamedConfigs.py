@@ -1,3 +1,15 @@
+#Naming convention:
+#1 through 10 are the names of the points in the configuration
+#11 through 21 are the names of the lines in the configuration
+#Example:
+#			4:[12, 11, 13, 14] means that point 4 is on lines 12, 11, 13, and 14 (only)
+#			18:[2, 3, 5] means that line 18 contains points 2, 3, and 5 (only)
+
+#The following are all 10-point configurations with the following exceptions:
+#Duals are not included (2)
+#Dancing starfish is not included (1)
+#as these are 10-pt configs, the 9-pt configs are not included
+
 'Con-10-0 #1 (Desargues)'
 {1: [11, 17, 15], 2: [12, 16, 20], 3: [15, 16, 14], 4: [12, 11, 13], 5: [11, 16, 18], 6: [17, 18, 14], 7: [19, 20, 14], 8: [12, 19, 15], 9: [13, 19, 17], 10: [13, 18, 20], 11: [4, 1, 5], 12: [4, 8, 2], 13: [4, 10, 9], 14: [6, 3, 7], 15: [1, 8, 3], 16: [5, 2, 3], 17: [6, 1, 9], 18: [10, 6, 5], 19: [8, 9, 7], 20: [10, 2, 7]}
 'Con-10-0 #2'
