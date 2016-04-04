@@ -3427,6 +3427,15 @@ var Names = [
     'Con-10-4 #1: MindFuck'
 ];
 
+// Create empty Descriptions array
+var Descriptions = [];
+for (var i = 0; i < Points.length; i++) {
+    Descriptions.push('');
+}
+
+// Add specific descriptions here
+Descriptions[0] = 'This one is great!';
+
 var NumberOfConfigurations = Points.length;
 if (NumberOfConfigurations != Names.length) {
     alert("Error! Data set inconsistent");

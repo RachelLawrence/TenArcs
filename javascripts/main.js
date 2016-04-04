@@ -15,6 +15,9 @@ $(function() {
     // Update Name
     $main.find('.config-name').text(Names[i]);
 
+    // Update description
+    $main.find('.config-description').text(Descriptions[i]);
+
     // Clear table
     var $table = $main.find('table.points');
     $table.html('');
