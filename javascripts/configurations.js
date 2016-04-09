@@ -1957,7 +1957,7 @@ var Names = [
     'Con-12-1 #1', 'Con-12-1 #2', 'Con-12-1 #3', 'Con-12-1 #4', 'Con-12-1 #5',
     'Con-12-1 #6', 'Con-12-1 #7', 'Con-12-2 #1: The Lawrence Superconfiguration',
     'Con-12-3 #1: Woop!', 'Con-13-0 #1', 'Con-13-0 #2', 'Con-13-1 #1: Maximal Incidence',
-    'Con-10-4 #1: MindFuck', 'Dancing Starfish'
+    'Con-10-4 #1: MindFuck', 'Con-11-0 #42: Dancing Starfish'
 ];
 
 // Create empty Descriptions array
