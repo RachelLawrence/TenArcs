@@ -1967,7 +1967,7 @@ for (var i = 0; i < Points.length; i++) {
 }
 
 // Add specific descriptions here
-Descriptions[0] = 'This one is great!';
+Descriptions[0] = 'This one is great!<sup>sup</sup>';
 
 var NumberOfConfigurations = Points.length;
 if (NumberOfConfigurations != Names.length) {
