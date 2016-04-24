@@ -1968,7 +1968,6 @@ for (var i = 0; i < Points.length; i++) {
 
 // Add specific descriptions here
 Descriptions[0] = 'This one is great!<sup>sup</sup>';
-Descrptions[ConfigDual-9-4] = 'Polynomial'
 
 var NumberOfConfigurations = Points.length;
 if (NumberOfConfigurations != Names.length) {
