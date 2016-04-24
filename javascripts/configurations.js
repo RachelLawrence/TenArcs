@@ -1968,7 +1968,8 @@ for (var i = 0; i < Points.length; i++) {
 
 // Add specific descriptions here
 Descriptions[0] = 'This one is great!<sup>sup</sup>';
-Descriptions[1] = 'Polynomials'
+Descriptions[0] = 'Polynomials';
+Descriptions[0] = 'Unrealizable over any finite field'
 
 var NumberOfConfigurations = Points.length;
 if (NumberOfConfigurations != Names.length) {
