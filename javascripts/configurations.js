@@ -1969,7 +1969,7 @@ for (var i = 0; i < Points.length; i++) {
 // Add specific descriptions here
 Descriptions[0] = 'Unrealizable over any finite field'
 Descriptions[1] = 'n(q)=2 if 4|(n-1), 0 otherwise'
-Descriptions[2] = 'n(q)=q-2 if 2|q, q-3 if 3|q, and q-5 otherwise.'
+Descriptions[2] = 'n(q)=q-2 if 2|q', 'q-3 if 3|q', 'and q-5 otherwise.'
 
 var NumberOfConfigurations = Points.length;
 if (NumberOfConfigurations != Names.length) {
