@@ -1967,9 +1967,8 @@ for (var i = 0; i < Points.length; i++) {
 }
 
 // Add specific descriptions here
-Descriptions[0] = 'This one is great!<sup>sup</sup>'
-Descriptions[0] = 'Polynomials'
 Descriptions[0] = 'Unrealizable over any finite field'
+Descriptions[1] = 'n(q)=2 if 4|(n-1), 0 otherwise'
 
 var NumberOfConfigurations = Points.length;
 if (NumberOfConfigurations != Names.length) {
