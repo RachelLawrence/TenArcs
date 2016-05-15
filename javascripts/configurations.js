@@ -1970,6 +1970,16 @@ for (var i = 0; i < Points.length; i++) {
 Descriptions[0] = 'Unrealizable over any finite field'
 Descriptions[1] = 'n(q)=2 if 4|(n-1), 0 otherwise'
 Descriptions[2] = 'n(q)=q-2 if 2|q, q-3 if 3|q, and q-5 otherwise'
+Descriptions[3] = 'Elkies has result'
+Descriptions[4] = 'Elkies has result'
+Descriptions[5] = 'Elkies has result'
+Descriptions[6] = 'Elkies has result'
+Descriptions[7] = 'Elkies has result'
+Descriptions[8] = 'Elkies has result'
+Descriptions[9] = 'Elkies has result'
+Descriptions[10] = 'Elkies has result'
+Descriptions[11] = 'Elkies has result'
+Descriptions[12] = 'Elkies has result'
 
 var NumberOfConfigurations = Points.length;
 if (NumberOfConfigurations != Names.length) {
