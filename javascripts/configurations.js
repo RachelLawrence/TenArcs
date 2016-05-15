@@ -2004,6 +2004,13 @@ Descriptions[33] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2-x-1=0.'
 Descriptions[34] = 'n(q)=#x s.t. x^3-x+1=0.'
 Descriptions[35] = 'n(q)=#x s.t. x^2-2x+2=0 and x ne 0.'
 Descriptions[36] = 'n(q)=q-2 if 2|q, q-3 otherwise.'
+Descriptions[37] = 'n(q)=0 if 2|q, q-3 if 3|q, and q-4 otherwise.'
+Descriptions[38] = 'This superfiguration is unrealizable in any projecive plane over a finite field.'
+Descriptions[39] = 'This superfiguration is unrealizable; anti-Desarguesian.'
+Descriptions[40] = 'n(q)=#x s.t. x^2-2x+2=0, x not in {0, 2^{-1}}.'
+Descriptions[41] = 'n(q)=0 if 2,3|q, 1 otherwise.'
+Descriptions[42] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2-3x+1=0.'
+Descriptions[43] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2-2x-1=0, x not in {-1,1}.'
 
 var NumberOfConfigurations = Points.length;
 if (NumberOfConfigurations != Names.length) {
