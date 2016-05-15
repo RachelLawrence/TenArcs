@@ -1999,6 +1999,11 @@ Descriptions[28] = 'n(q)=#x s.t. x not in {0,1,2}, x^2-x-1 ne 0, and x^2-3x+1 ne
 Descriptions[29] = 'This superfiguration is unrealizable over any projective plane over a finite field'
 Descriptions[30] = 'n(q)=#(x,y) s.t. x not in {0,1}, y not in {-1,0,1}, x ne y, and (x-1)y^2+(2x-x^2)y-x=0.'
 Descriptions[31] = 'n(q)=#(x,y) s.t. x,y not in {0,1}, (1-x)y ne 1, and y^2-(1+x^2)y+x=0.'
+Descriptions[32] = 'n(q)=#x s.t. x^2-2x+2=0 and x ne 0.'
+Descriptions[33] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2-x-1=0.'
+Descriptions[34] = 'n(q)=#x s.t. x^3-x+1=0.'
+Descriptions[35] = 'n(q)=#x s.t. x^2-2x+2=0 and x ne 0.'
+Descriptions[36] = 'n(q)=q-2 if 2|q, q-3 otherwise.'
 
 var NumberOfConfigurations = Points.length;
 if (NumberOfConfigurations != Names.length) {
