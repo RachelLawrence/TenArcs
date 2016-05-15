@@ -1984,12 +1984,21 @@ Descriptions[13] = 'n(q)=(q-2)(q-4) if 2|q, (q-3)(q-6) if 3|q, (q-4)(q-5) otherw
 Descriptions[14] = 'n(q)=(q-2)(q-4) if 2|q, 0 otherwise'
 Descriptions[15] = 'n(q)=0 if 2|q, q-3 if 3|q, q-4 otherwise'
 Descriptions[16] = 'n(q)=0 if 2|q, q-3 if 3|q, q-5 otherwise'
-Descriptions[17] = 'Unrealizable over any finite field; anti-Desarguesian'
+Descriptions[17] = 'Unrealizable over any projective plane over a finite field; anti-Desarguesian'
 Descriptions[18] = 'n(q)=#(x,y) s.t. (2-x)y=1+x^(-1), x,y not in {0,1}, xy not in {1,2}, and xy-1 ne x'
 Descriptions[19] = 'n(q)=#(x,y) s.t. (xy)^2-(xy)+1=0, x^2y-x-1 ne 0, 2x ne 1+y^{-1}, y ne (x-1)^{-1}, x not in {0,1}, and y ne 0'
 Descriptions[20] = 'n(q)=#x s.t. 1+2x^2 ne (1-x)(1-2x), 2x ne 1, 2x^2-2x+1 ne 0, and x not in {0,1}'
 Descriptions[21] = 'n(q)=0 if 2|q, q-3 if 3|q, q-4 if 5|q, q-5 otherwise'
 Descriptions[22] = 'n(q)=#(x,y) s.t. x^2y^3-(3x^2-x)y^2+(3x^2-3x+1)y-(x-1)^2=0, x,y not in {0,1}, y ne 2, xy^2+(1-2x)y+x ne 0, xy^2+(1-2x)y+(x-1) ne 0, y ne 1-x^{-1}, and y ne 2-x^{-1}'
+Descriptions[23] = 'n(q)=#(x,y) s.t. xy^2+(x^2-3x-1)y+2=0, x,y not in {0,1}, xy ne 1, and xy ne x+1 in char=2'
+Descriptions[24] = 'n(q)=#(x,y) s.t. (1-x)y^2+(x^2-x-1)y+x=0, x,y not in {-1,0,1}, and x ne y'
+Descriptions[25] = 'n(q)=#(x,y) s.t. xy^2-(x^2-x+1)y-(x^2-x)=0, x not in {0,1}, y not in {-1,0} y not in {x, x-1, x(1-x)^{-1}}'
+Descriptions[26] = 'n(q)=#(x,y) s.t. (x-x^2)y^3+(3x^2-x-1)y^2-(3x^2+2x-2)y+(x^2+2x-1)=0, x ne 0, y not in {1,2} y not in {x^{-1}, 1+x^{-1}}, xy^2-(2x+1)y+(x+1) ne 0, and xy^2-(2x+1)y+(x+2) ne 0'
+Descriptions[27] = 'n(q)=#x s.t. x^2-3x+1 ne 0, 2x ne 1, x not in {0,1,2}'
+Descriptions[28] = 'n(q)=#x s.t. x not in {0,1,2}, x^2-x-1 ne 0, and x^2-3x+1 ne 0'
+Descriptions[29] = 'This superfiguration is unrealizable over any projective plane over a finite field'
+Descriptions[30] = 'n(q)=#(x,y) s.t. x not in {0,1}, y not in {-1,0,1}, x ne y, and (x-1)y^2+(2x-x^2)y-x=0.'
+Descriptions[31] = 'n(q)=#(x,y) s.t. x,y not in {0,1}, (1-x)y ne 1, and y^2-(1+x^2)y+x=0.'
 
 var NumberOfConfigurations = Points.length;
 if (NumberOfConfigurations != Names.length) {
