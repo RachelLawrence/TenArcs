@@ -1987,6 +1987,9 @@ Descriptions[16] = 'n(q)=0 if 2|q, q-3 if 3|q, q-5 otherwise'
 Descriptions[17] = 'Unrealizable over any finite field; anti-Desarguesian'
 Descriptions[18] = 'n(q)=#(x,y) s.t. (2-x)y=1+x^(-1), x,y not in {0,1}, xy not in {1,2}, and xy-1 ne x'
 Descriptions[19] = 'n(q)=#(x,y) s.t. (xy)^2-(xy)+1=0, x^2y-x-1 ne 0, 2x ne 1+y^{-1}, y ne (x-1)^{-1}, x not in {0,1}, and y ne 0'
+Descriptions[20] = 'n(q)=#x s.t. 1+2x^2 ne (1-x)(1-2x), 2x ne 1, 2x^2-2x+1 ne 0, and x not in {0,1}'
+Descriptions[21] = 'n(q)=0 if 2|q, q-3 if 3|q, q-4 if 5|q, q-5 otherwise'
+Descriptions[22] = 'n(q)=#(x,y) s.t. x^2y^3-(3x^2-x)y^2+(3x^2-3x+1)y-(x-1)^2=0, x,y not in {0,1}, y ne 2, xy^2+(1-2x)y+x ne 0, xy^2+(1-2x)y+(x-1) ne 0, y ne 1-x^{-1}, and y ne 2-x^{-1}'
 
 var NumberOfConfigurations = Points.length;
 if (NumberOfConfigurations != Names.length) {
