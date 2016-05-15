@@ -1980,6 +1980,13 @@ Descriptions[9] = 'Elkies has result'
 Descriptions[10] = 'Elkies has result'
 Descriptions[11] = 'Elkies has result'
 Descriptions[12] = 'Elkies has result'
+Descriptions[13] = 'n(q)=(q-2)(q-4) if 2|q, (q-3)(q-6) if 3|q, (q-4)(q-5) otherwise'
+Descriptions[14] = 'n(q)=(q-2)(q-4) if 2|q, 0 otherwise'
+Descriptions[15] = 'n(q)=0 if 2|q, q-3 if 3|q, q-4 otherwise'
+Descriptions[16] = 'n(q)=0 if 2|q, q-3 if 3|q, q-5 otherwise'
+Descriptions[17] = '?'
+Descriptions[18] = 'n(q)=#(x,y) s.t. (2-x)y=1+x^(-1), x,y \notin {0,1}, xy \notin {1,2}, and xy-1 \ne x'
+Descriptions[19] = 'n(q)=#(x,y) s.t. (xy)^2-(xy)+1=0, x^2y-x-1 \ne 0, 2x \ne 1+y^{-1}, y \ne (x-1)^{-1}, x \notin {0,1}, y \ne 0'
 
 var NumberOfConfigurations = Points.length;
 if (NumberOfConfigurations != Names.length) {
