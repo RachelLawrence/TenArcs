@@ -2079,6 +2079,10 @@ Descriptions[108] = 'n(q)=#x s.t. x^3-3x^2+2x-1=0.'
 Descriptions[109] = 'n(q)=0 if 2,3,5|q; 1 otherwise.'
 Descriptions[110] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
 Descriptions[111] = 'n(q)=#x s.t. x^3-4x^2+3x+1=0.'
+Descriptions[112] = 'This superfiguration is unrealizable; anti-Pappian.'
+Descriptions[113] = 'n(q)=2 if q=2^{2k}, 0 otherwise.'
+Descriptions[114] = 'n(q)=1 if 5|q, 0 otherwise.'
+Descriptions[115] = 'This superfiguration is unrealizable; anti-Pappian.'
 
 
 var NumberOfConfigurations = Points.length;
