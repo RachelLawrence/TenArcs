@@ -2102,6 +2102,15 @@ Descriptions[131] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2+x-1=0.'
 Descriptions[132] = 'This superfiguration is unrealizable; anti-Pappian.'
 Descriptions[133] = 'n(q)=#x s.t. x^3-2x^2+x-1=0, x^2-x+1 ne 0, and x^2-2x+2 ne 0.'
 Descriptions[134] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2-x-1=0.'
+Descriptions[135] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2+1=0.'
+Descriptions[136] = 'n(q)=q-2 if 2|q and 0 otherwise.'
+Descriptions[137] = 'This superfiguration is unrealizable; anti-Pappian.'
+Descriptions[138] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
+Descriptions[139] = 'n(q)=0 if 2,3|q, 1 otherwise.'
+Descriptions[140] = 'n(q)=1 if 5|q and 0 otherwise.'
+Descriptions[141] = 'This superfiguration is unrealizable; anti-Pappian.'
+Descriptions[142] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
+Descriptions[143] = 'n(q)=1 if 3|q, 0 otherwise.'
 
 
 var NumberOfConfigurations = Points.length;
