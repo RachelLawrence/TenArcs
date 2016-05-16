@@ -2111,6 +2111,11 @@ Descriptions[140] = 'n(q)=1 if 5|q and 0 otherwise.'
 Descriptions[141] = 'This superfiguration is unrealizable; anti-Pappian.'
 Descriptions[142] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
 Descriptions[143] = 'n(q)=1 if 3|q, 0 otherwise.'
+Descriptions[144] = 'n(q)=1 if 5|q, 0 otherwise.'
+Descriptions[145] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
+Descriptions[146] = 'n(q)=2 if q=2^{2k}, 0 otherwise.'
+Descriptions[147] = 'n(q)=1 if 3|q, 0 otherwise.'
+Descriptions[148] = 'n(q)=#x s.t. x^2-x-1=0.'
 
 
 var NumberOfConfigurations = Points.length;
