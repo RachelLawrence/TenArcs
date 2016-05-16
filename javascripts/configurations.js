@@ -2011,6 +2011,11 @@ Descriptions[40] = 'n(q)=#x s.t. x^2-2x+2=0, x not in {0, 2^{-1}}.'
 Descriptions[41] = 'n(q)=0 if 2,3|q, 1 otherwise.'
 Descriptions[42] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2-3x+1=0.'
 Descriptions[43] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2-2x-1=0, x not in {-1,1}.'
+Descriptions[44] = 'n(q)=q-2 if 2|q, 0 otherwise.'
+Descriptions[45] = 'n(q)=0 if 2,3|q, 1 otherwise.'
+Descriptions[46] = 'n(q)=0 if 2,3|q, 1 otherwise.'
+Descriptions[47] = 'This superfiguration is unrealizable; anti-Desarguesian.'
+Descriptions[48] = 'n(q)=2 if q=2^{2k}, 0 otherwise.'
 
 var NumberOfConfigurations = Points.length;
 if (NumberOfConfigurations != Names.length) {
