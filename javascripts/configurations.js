@@ -2050,6 +2050,11 @@ Descriptions[79] = 'n(q)=#(x,y) s.t. xy^2-(x^2+x+1)y+(x^2+x)=0, x,y not in {0,1}
 Descriptions[80] = 'n(q)=#(x,y) s.t. (x-x^2)y^2+x^2y-1=0, x,y not in {0,1}, and y not in {x^{-1}, 1+x^{-1}, x(x-1)^{-1}}.'
 Descriptions[81] = 'n(q)=#(x,y) s.t. (x-1)y^2+(x-2)(x-1)y-1=0, x not in {0,1,2}, y not in {0,1}, and y ne (2-x)^{-1}.'
 Descriptions[82] = 'n(q)=#(x,y) s.t. (x^2-x)y^2-(x^2-1)y+x=0, (x^2-x)y-(x^2+x-1) ne 0, (x-1)y-(2x-1) ne 0, x,y not in {0,1}, and y not in {x^{-1}, 1+x^{-1}, x(x-1)^{-1}}.'
+Descriptions[83] = 'n(q)=#x s.t. x^3-2x^2+3x-1=0.'
+Descriptions[84] = 'n(q)=0 if 2,3|q, 1 otherwise.'
+Descriptions[85] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2+1 ne 0 and x not in {-1,0,1}.'
+Descriptions[86] = 'This superfiguration is unrealizable; anti-Pappian.'
+Descriptions[87] = 'n(q)=#x s.t. x^4-x^3+x^2-x+1=0.'
 
 var NumberOfConfigurations = Points.length;
 if (NumberOfConfigurations != Names.length) {
