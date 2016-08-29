@@ -2147,7 +2147,7 @@ Descriptions[149] = 'n(q)=1 if 3|q, 0 otherwise.'
 Descriptions[150] = 'n(q)=#x s.t. x^2-x-1=0. Total degree=2, dimension=0, discriminant=5.'
 
 
-var automorphismGroups = [
+var AutomorphismGroups = [
 12,
 6,
 36,
