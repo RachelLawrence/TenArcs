@@ -17,6 +17,9 @@ $(function() {
 
     // Update description
     $main.find('.config-description').text(Descriptions[i]);
+    
+    // Update auto groups?
+    $main.find('.config-automorphism-group-cardinality').text(AutomorphismGroups[i]);
 
     // Clear table
     var $table = $main.find('table.points');
