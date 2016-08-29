@@ -18,8 +18,22 @@ $(function() {
     // Update description
     $main.find('.config-description').text(Descriptions[i]);
     
-    // Update auto groups?
+    // Update auto groups
     $main.find('.config-automorphism-group-cardinality').text(AutomorphismGroups[i]);
+    
+    // Update small realizability
+    $main.find('.config-small-realizability-2').text(SmallRealizability[i][0]);
+    $main.find('.config-small-realizability-3').text(SmallRealizability[i][1]);
+    $main.find('.config-small-realizability-4').text(SmallRealizability[i][2]);
+    $main.find('.config-small-realizability-5').text(SmallRealizability[i][3]);
+    $main.find('.config-small-realizability-7').text(SmallRealizability[i][4]);
+    $main.find('.config-small-realizability-8').text(SmallRealizability[i][5]);
+    $main.find('.config-small-realizability-9').text(SmallRealizability[i][6]);
+    $main.find('.config-small-realizability-11').text(SmallRealizability[i][7]);
+    $main.find('.config-small-realizability-13').text(SmallRealizability[i][8]);
+    $main.find('.config-small-realizability-16').text(SmallRealizability[i][9]);
+    $main.find('.config-small-realizability-17').text(SmallRealizability[i][10]);
+    $main.find('.config-small-realizability-19').text(SmallRealizability[i][11]);
 
     // Clear table
     var $table = $main.find('table.points');
