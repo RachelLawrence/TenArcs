@@ -79,6 +79,15 @@ $(function() {
       })(i));
   };
   
-  var $hi = $(".navig");
-  $("Hi Hi").appendTo($hi);
+  var $sidebar2 = $(".navig");
+  for (var i = 0; i < NumberOfConfigurations; i++) {
+    var item = '<a>' + (i + 1) + '</a>';
+    $(item)
+      .appendTo($sidebar2)
+      .click((function(_i) {
+        return function(e) {
+          render(_i);
+        };
+      })(i));
+  };
 });
