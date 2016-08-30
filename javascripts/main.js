@@ -81,10 +81,6 @@ $(function() {
   
   var $sidebar2 = $(".navig");
   
-  for (var p = 7; p <= 10; p++) {
-    $("<th> " + p + " </th>").appendTo(".navig");
-  }
-  
   for (var i = 0; i < NumberOfConfigurations; i++) {
     var item = '<a>' + (i + 1) + '</a>';
     var locate = $(".td" + points[i].length);
