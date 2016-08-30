@@ -2198,7 +2198,7 @@ Descriptions[148] = 'n(q)=2 if q=2^{2k}, 0 otherwise.'
 Descriptions[149] = 'n(q)=1 if 3|q, 0 otherwise.'
 Descriptions[150] = 'n(q)=#x s.t. x^2-x-1=0. Total degree=2, dimension=0, discriminant=5.'
 
-for (int i = 0; i < 12; i++) {
+for (var i = 0; i < 12; i++) {
     Descriptions.unshift('Not input yet');
 }
 
