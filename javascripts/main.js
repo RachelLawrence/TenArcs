@@ -78,4 +78,7 @@ $(function() {
         };
       })(i));
   };
+  
+  var $hi = $(".navig");
+  $("Hi Hi").appendTo($hi);
 });
