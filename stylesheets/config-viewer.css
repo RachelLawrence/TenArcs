@@ -29,6 +29,7 @@ table.points td {
 	text-align: center;
 }
 
-table.sr pad {
+table.sr td {
 	padding: 1px;
+	text-align: left;
 }
