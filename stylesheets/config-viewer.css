@@ -18,3 +18,8 @@ table.points td {
 	padding: 1px;
 	text-align: center;
 }
+
+table.SmallRealizability sr {
+	padding: 1px;
+	text-align: center;
+}
