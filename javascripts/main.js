@@ -69,7 +69,11 @@ $(function() {
 
   var $sidebar = $(".nav-pills");
   for (var i = 0; i < NumberOfConfigurations; i++) {
-    var item = '<a>' + (i + 1) + '</a>';
+    var item = i + 1;
+    if (Names[i][0] == '*') {
+      item = '<b>' + item + </b>;
+    }
+    item = '<a>' + item + '</a>';
     $(item)
       .appendTo($sidebar)
       .click((function(_i) {
