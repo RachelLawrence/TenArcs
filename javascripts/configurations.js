@@ -264,6 +264,18 @@ var Points = [
         [1, 4, 9, 10]       
     ],
     [
+        [8, 9, 5],
+        [1, 8, 10, 2],
+        [9, 10, 3, 4],
+        [7, 10, 6],
+        [1, 9, 6],
+        [7, 9, 2],
+        [2, 4, 5, 6],
+        [8, 3, 6],
+        [7, 1, 3, 5],
+        [7, 8, 4]
+    ],
+    [
         [1, 10, 2, 3],
         [1, 4, 5],
         [1, 6, 7],
@@ -1968,18 +1980,6 @@ var Points = [
         [10, 5, 6]
     ],
     [
-        [8, 9, 5],
-        [1, 8, 10, 2],
-        [9, 10, 3, 4],
-        [7, 10, 6],
-        [1, 9, 6],
-        [7, 9, 2],
-        [2, 4, 5, 6],
-        [8, 3, 6],
-        [7, 1, 3, 5],
-        [7, 8, 4]
-    ],
-    [
         [1,6,10],
         [1,7,9],
         [2,6,7],
@@ -2009,6 +2009,7 @@ var Names = [
     'Con-10-2 R #2', 'Con-10-2 R #3 (Anti-Desargues No. 2)', 'Con-10-2 R #4',
     'Con-10-2 R #5', 'Con-10-2 R #6', 'Con-10-2 R #7', 'Con-10-3 #1', 'Con-10-3 #2',
     'Con-10-3 #3', 'Con-10-3 #4 (UberFano / Anti-Desargues No. 3) Dual to Con-10-3 #6', 'Con-10-3 #5', 'Con-10-3 #6 (Dual to Con-10-3 #4)',
+    'Con-10-4 #1: MindFuck',
     'Con-11-0 #1', 'Con-11-0 #2', 'Con-11-0 #3', 'Con-11-0 #4', 'Con-11-0 #5',
     'Con-11-0 #6', 'Con-11-0 #7', 'Con-11-0 #8', 'Con-11-0 #9', 'Con-11-0 #10',
     'Con-11-0 #11', 'Con-11-0 #12', 'Con-11-0 #13', 'Con-11-0 #14', 'Con-11-0 #15',
@@ -2034,7 +2035,7 @@ var Names = [
     'Con-12-1 #1', 'Con-12-1 #2', 'Con-12-1 #3', 'Con-12-1 #4', 'Con-12-1 #5',
     'Con-12-1 #6', 'Con-12-1 #7', 'Con-12-2 #1: The Lawrence Superconfiguration',
     'Con-12-3 #1: Woop!', 'Con-13-0 #1', 'Con-13-0 #2', 'Con-13-1 #1: Maximal Incidence',
-    'Con-10-4 #1: MindFuck',
+
     'The Dancing Starfish'
 ];
 
@@ -2097,105 +2098,105 @@ Descriptions[47] = 'n(q)=0 if 2,3|q, 1 otherwise.'
 Descriptions[48] = 'This superfiguration is unrealizable; anti-Desarguesian.'
 Descriptions[49] = 'n(q)=2 if q=2^{2k}, 0 otherwise.'
 Descriptions[50] = 'See two previous - DUAL.'
-Descriptions[51] = 'n(q)=#x s.t. x not in {-1,0,1}, x^3+x^2-1 ne 0, x^3-x+1 ne 0, and x^2+x-1 ne 0. Total degree: N/A, dimension=1.'
-Descriptions[52] = 'n(q)=#x s.t. x not in {-1,0,1}, x^2+x+1 ne 0, x^2+1 ne 0, and x^3+x^2+x+1 ne 0. Total degree: N/A, dimension=1.'
-Descriptions[53] = 'n(q)=#x s.t. x not in {-1,0,1}, x^2-x-1 ne 0, x^2+x-1 ne 0, and x^2-x+1 ne 0. Total degree: N/A, dimension=1.'
-Descriptions[54] = 'This superfiguration is unrealizable; anti-Pappian.'
-Descriptions[55] = 'n(q)=#(x,y) s.t. x not in {0,1,2}, y ne 0, x+y^{-1} not in {1,2}, and (x^2-3x+1)y^2+(x-2)y+1=0. Total degree=4, dimension=1.'
-Descriptions[56] = 'n(q)=#(x,y) s.t. x not in {-1,0,1}, x^2+x-x^2y ne 1, and 2y-1=(y^2-y+1)x. Total degree=3, dimension=1.'
-Descriptions[57] = 'n(q)=#(x,y) s.t. x not in {0,1}, y not in {0,1,2}, x(2-y) ne 1, xy ne 1-x, and x^2y^2-(2x^2+x)y+(x+1)=0. Total degree=4, dimension=1.'
-Descriptions[58] = 'n(q)=#(x,y) s.t. x not in {0,1,2}, y not in {-1,0,1}, x ne 1-y^{-1}, x ne 1-y, and y^2-(x^2-4x+2)y+1=0. Total degree=3, dimension=1.'
-Descriptions[59] = 'n(q)=#(x,y) s.t. x not in {0,1}, y ne 0, y ne 1 if char=2, y ne x(x-2)^{-1} if char ne 2, x^2+2xy ne x+y, and x^2+xy+y^2=0. Total degree=2, dimension=1.'
-Descriptions[60] = 'n(q)=#(x,y) s.t. x,y not in {0,1}, y ne 1-x^{-1}, y ne 2-x^{-1}, xy^2+(x^2-3x+1)y-(x-1)^2 ne 0, (x^2-x)y-(x^2-3x+1) ne 0, x^2y^2-(2x^2+x)y+(x^2-1) ne 0, and x^2y^3-(2x^3-x^2)y^2+(4x^3-7x^2+3x)y-(2x^3-5x^2+4x-1)=0. Total degree=5, dimension=1.'
-Descriptions[61] = 'n(q)=#(x,y) s.t. (x^3-x^2)y^2-2(x^3-x)y+(x^3+x^2-1)=0, (x^2-x)y-(2x-1) ne 0, (x^2-x)y-(x^2+x-1) ne 0, x,y not in {0,1}, and y not in {x^{-1},1+x^{-1}}. Total degree=5, dimension=1.'
-Descriptions[62] = 'n(q)=#(x,y) s.t. (x^2-x)y^2-(2x^2-x-1)y+(x^2+x-1)=0, x,y not in {0,1}, y not in {x^{-1}, 1+x^{-1}, x(x-1)^{-1}}, and (x-2)y ne x-1. Total degree=4, dimension=1.'
-Descriptions[63] = 'n(q)=#(x,y) s.t. x^2y^2-(2x^2+x)y+(x^2+x-1)=0, x^2y^2-(x^2+2x)y+1 ne 0, x,y not in {0,1}, and y not in {x^{-1}, 1+x^{-1}}. Total degree=4, dimension=1.'
-Descriptions[64] = 'n(q)=#x s.t. x not in {-1,0,1}, x^2-x+1 ne 0, and x^2+1 ne 0. Total degree: N/A, dimension=1.'
-Descriptions[65] = 'n(q)=#(x,y) s.t. x^2(y-1)^2+x(y-1)+1=0, x,y not in {0,1}, and y not in {x^{-1}, 1+x^{-1}, x(x-1)^{-1}}. Total degree=4, dimension=1.'
-Descriptions[66] = 'n(q)=#(x,y) s.t. x^2y^2-(x^2+x+1)y+1=0, xy^2-(2x+1)y+1 ne 0, x,y not in {0,1}, and y not in {x^{-1}, (1+x)^{-1}}. Total degree=4, dimension=1.'
-Descriptions[67] = 'This superfiguration is unrealizable; anti-Pappian.'
-Descriptions[68] = 'n(q)=#(x,y) s.t. x,y not in {0,1}, y^2-y+1=0, y not in {x^{-1}, x(x-1)^{-1}, (x-1)^{-1}, 1+x^{-1}}, and x ne (2x-1)y. Total degree=2, dimension=1, discriminant of single variable polynomial is -3.'
-Descriptions[69] = 'n(q)=#x s.t. x not in {0,1,2,3}, x^2-3x+1 ne 0, and x^3-3x^2+2x-1 ne 0. Total degree: N/A, dimension=1.'
-Descriptions[70] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
-Descriptions[71] = 'n(q)=#x s.t. x not in {-2,-1,0,1}, x^2+2x-1 ne 0, and x^2+x-1 ne 0. Total degree: N/A, dimension=1.'
-Descriptions[72] = 'n(q)=#(x,y) s.t. y^2+xy-(x^2+x)=0, y ne 1-x, x not in {-1,0,1}, and y not in {0,1}. Total degree=2, dimension=1.'
-Descriptions[73] = 'n(q)=#x s.t. x not in {-1,0,1}, 2x+1 ne 0, x^3-x^2+x+1 ne 0, and x^2-x-1 ne 0. Total degree: N/A, dimension=1.'
-Descriptions[74] = 'n(q)=#(x,y) s.t. x not in {-1,0,1}, y not in {0,1}, and (x+1)y^2+x^2y-(x^2-x)=0. Total degree=3, dimension=1.'
-Descriptions[75] = 'n(q)=#x s.t. x not in {-1,0,1}, x^2+x-1 ne 0, x^2-x-1 ne 0, and x^2-2 ne 0. Total degree: N/A, dimension=1.'
-Descriptions[76] = 'This superfiguration is unrealizable; anti-Pappian.'
-Descriptions[77] = 'n(q)=#(x,y) s.t. x not in {0,1}, y ne 0, y ne 1-x, and y^2+(x^2-1)y-(x^2+x)=0. Total degree=3, dimension=1.'
-Descriptions[78] = 'n(q)=#x s.t. x not in {-2,-1,0,1}, x^2+x+1 ne 0, and x^2+2x+2 ne 0. Total degree: N/A, dimension=1.'
-Descriptions[79] = 'n(q)=#x s.t. x not in {0,1,2}, x^2-3x+1 ne 0, and x^3-3x^2+2x-1 ne 0. Total degree: N/A, dimension=1.'
-Descriptions[80] = 'n(q)=#(x,y) s.t. x^2y^2-2x^2y+(x^2+x-1)=0, x,y not in {0,1} y not in {x^{-1}, 1+x^{-1}, x(x-1)^{-1}}, and 2y ne 1+x^{-1}. Total degree=4, dimension=1.'
-Descriptions[81] = 'n(q)=#(x,y) s.t. xy^2-(x^2+x+1)y+(x^2+x)=0, x,y not in {0,1}, x ne -1, (x-1)y^2-(x-1)y-1 ne 0, and y not in {1+x^{-1}, x(x-1)^{-1}}. Total degree=3, dimension=1.'
-Descriptions[82] = 'n(q)=#(x,y) s.t. (x-x^2)y^2+x^2y-1=0, x,y not in {0,1}, and y not in {x^{-1}, 1+x^{-1}, x(x-1)^{-1}}. Total degree=4, dimension=1.'
-Descriptions[83] = 'n(q)=#(x,y) s.t. (x-1)y^2+(x-2)(x-1)y-1=0, x not in {0,1,2}, y not in {0,1}, and y ne (2-x)^{-1}. Total degree=3, dimension=1.'
-Descriptions[84] = 'n(q)=#(x,y) s.t. (x^2-x)y^2-(x^2-1)y+x=0, (x^2-x)y-(x^2+x-1) ne 0, (x-1)y-(2x-1) ne 0, x,y not in {0,1}, and y not in {x^{-1}, 1+x^{-1}, x(x-1)^{-1}}. Total degree=4, dimension=1.'
-Descriptions[85] = 'n(q)=#x s.t. x^3-2x^2+3x-1=0. Total degree=3, dimension=0, discriminant=-23.'
-Descriptions[86] = 'n(q)=0 if 2,3|q, 1 otherwise.'
-Descriptions[87] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2+1 ne 0 and x not in {-1,0,1}. Total degree: N/A, dimension=1.'
-Descriptions[88] = 'This superfiguration is unrealizable; anti-Pappian.'
-Descriptions[89] = 'n(q)=#x s.t. x^4-x^3+x^2-x+1=0. Total degree=4, dimension=0, discriminant=125.'
-Descriptions[90] = 'n(q)=0 if 2,3|q, 1 otherwise.'
-Descriptions[91] = 'This superfiguration is unrealizable; anti-Pappian.'
-Descriptions[92] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2-x+1=0 and x ne -1. Total degree=2, dimension=0, discriminant=-3.'
-Descriptions[93] = 'This superfiguration is unrealizable; anti-Pappian.'
+Descriptions[51] = 'n(q)=1 if 3|q, 0 otherwise.'
+Descriptions[52] = 'n(q)=#x s.t. x not in {-1,0,1}, x^3+x^2-1 ne 0, x^3-x+1 ne 0, and x^2+x-1 ne 0. Total degree: N/A, dimension=1.'
+Descriptions[53] = 'n(q)=#x s.t. x not in {-1,0,1}, x^2+x+1 ne 0, x^2+1 ne 0, and x^3+x^2+x+1 ne 0. Total degree: N/A, dimension=1.'
+Descriptions[54] = 'n(q)=#x s.t. x not in {-1,0,1}, x^2-x-1 ne 0, x^2+x-1 ne 0, and x^2-x+1 ne 0. Total degree: N/A, dimension=1.'
+Descriptions[55] = 'This superfiguration is unrealizable; anti-Pappian.'
+Descriptions[56] = 'n(q)=#(x,y) s.t. x not in {0,1,2}, y ne 0, x+y^{-1} not in {1,2}, and (x^2-3x+1)y^2+(x-2)y+1=0. Total degree=4, dimension=1.'
+Descriptions[57] = 'n(q)=#(x,y) s.t. x not in {-1,0,1}, x^2+x-x^2y ne 1, and 2y-1=(y^2-y+1)x. Total degree=3, dimension=1.'
+Descriptions[58] = 'n(q)=#(x,y) s.t. x not in {0,1}, y not in {0,1,2}, x(2-y) ne 1, xy ne 1-x, and x^2y^2-(2x^2+x)y+(x+1)=0. Total degree=4, dimension=1.'
+Descriptions[59] = 'n(q)=#(x,y) s.t. x not in {0,1,2}, y not in {-1,0,1}, x ne 1-y^{-1}, x ne 1-y, and y^2-(x^2-4x+2)y+1=0. Total degree=3, dimension=1.'
+Descriptions[60] = 'n(q)=#(x,y) s.t. x not in {0,1}, y ne 0, y ne 1 if char=2, y ne x(x-2)^{-1} if char ne 2, x^2+2xy ne x+y, and x^2+xy+y^2=0. Total degree=2, dimension=1.'
+Descriptions[61] = 'n(q)=#(x,y) s.t. x,y not in {0,1}, y ne 1-x^{-1}, y ne 2-x^{-1}, xy^2+(x^2-3x+1)y-(x-1)^2 ne 0, (x^2-x)y-(x^2-3x+1) ne 0, x^2y^2-(2x^2+x)y+(x^2-1) ne 0, and x^2y^3-(2x^3-x^2)y^2+(4x^3-7x^2+3x)y-(2x^3-5x^2+4x-1)=0. Total degree=5, dimension=1.'
+Descriptions[62] = 'n(q)=#(x,y) s.t. (x^3-x^2)y^2-2(x^3-x)y+(x^3+x^2-1)=0, (x^2-x)y-(2x-1) ne 0, (x^2-x)y-(x^2+x-1) ne 0, x,y not in {0,1}, and y not in {x^{-1},1+x^{-1}}. Total degree=5, dimension=1.'
+Descriptions[63] = 'n(q)=#(x,y) s.t. (x^2-x)y^2-(2x^2-x-1)y+(x^2+x-1)=0, x,y not in {0,1}, y not in {x^{-1}, 1+x^{-1}, x(x-1)^{-1}}, and (x-2)y ne x-1. Total degree=4, dimension=1.'
+Descriptions[64] = 'n(q)=#(x,y) s.t. x^2y^2-(2x^2+x)y+(x^2+x-1)=0, x^2y^2-(x^2+2x)y+1 ne 0, x,y not in {0,1}, and y not in {x^{-1}, 1+x^{-1}}. Total degree=4, dimension=1.'
+Descriptions[65] = 'n(q)=#x s.t. x not in {-1,0,1}, x^2-x+1 ne 0, and x^2+1 ne 0. Total degree: N/A, dimension=1.'
+Descriptions[66] = 'n(q)=#(x,y) s.t. x^2(y-1)^2+x(y-1)+1=0, x,y not in {0,1}, and y not in {x^{-1}, 1+x^{-1}, x(x-1)^{-1}}. Total degree=4, dimension=1.'
+Descriptions[67] = 'n(q)=#(x,y) s.t. x^2y^2-(x^2+x+1)y+1=0, xy^2-(2x+1)y+1 ne 0, x,y not in {0,1}, and y not in {x^{-1}, (1+x)^{-1}}. Total degree=4, dimension=1.'
+Descriptions[68] = 'This superfiguration is unrealizable; anti-Pappian.'
+Descriptions[69] = 'n(q)=#(x,y) s.t. x,y not in {0,1}, y^2-y+1=0, y not in {x^{-1}, x(x-1)^{-1}, (x-1)^{-1}, 1+x^{-1}}, and x ne (2x-1)y. Total degree=2, dimension=1, discriminant of single variable polynomial is -3.'
+Descriptions[70] = 'n(q)=#x s.t. x not in {0,1,2,3}, x^2-3x+1 ne 0, and x^3-3x^2+2x-1 ne 0. Total degree: N/A, dimension=1.'
+Descriptions[71] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
+Descriptions[72] = 'n(q)=#x s.t. x not in {-2,-1,0,1}, x^2+2x-1 ne 0, and x^2+x-1 ne 0. Total degree: N/A, dimension=1.'
+Descriptions[73] = 'n(q)=#(x,y) s.t. y^2+xy-(x^2+x)=0, y ne 1-x, x not in {-1,0,1}, and y not in {0,1}. Total degree=2, dimension=1.'
+Descriptions[74] = 'n(q)=#x s.t. x not in {-1,0,1}, 2x+1 ne 0, x^3-x^2+x+1 ne 0, and x^2-x-1 ne 0. Total degree: N/A, dimension=1.'
+Descriptions[75] = 'n(q)=#(x,y) s.t. x not in {-1,0,1}, y not in {0,1}, and (x+1)y^2+x^2y-(x^2-x)=0. Total degree=3, dimension=1.'
+Descriptions[76] = 'n(q)=#x s.t. x not in {-1,0,1}, x^2+x-1 ne 0, x^2-x-1 ne 0, and x^2-2 ne 0. Total degree: N/A, dimension=1.'
+Descriptions[77] = 'This superfiguration is unrealizable; anti-Pappian.'
+Descriptions[78] = 'n(q)=#(x,y) s.t. x not in {0,1}, y ne 0, y ne 1-x, and y^2+(x^2-1)y-(x^2+x)=0. Total degree=3, dimension=1.'
+Descriptions[79] = 'n(q)=#x s.t. x not in {-2,-1,0,1}, x^2+x+1 ne 0, and x^2+2x+2 ne 0. Total degree: N/A, dimension=1.'
+Descriptions[80] = 'n(q)=#x s.t. x not in {0,1,2}, x^2-3x+1 ne 0, and x^3-3x^2+2x-1 ne 0. Total degree: N/A, dimension=1.'
+Descriptions[81] = 'n(q)=#(x,y) s.t. x^2y^2-2x^2y+(x^2+x-1)=0, x,y not in {0,1} y not in {x^{-1}, 1+x^{-1}, x(x-1)^{-1}}, and 2y ne 1+x^{-1}. Total degree=4, dimension=1.'
+Descriptions[82] = 'n(q)=#(x,y) s.t. xy^2-(x^2+x+1)y+(x^2+x)=0, x,y not in {0,1}, x ne -1, (x-1)y^2-(x-1)y-1 ne 0, and y not in {1+x^{-1}, x(x-1)^{-1}}. Total degree=3, dimension=1.'
+Descriptions[83] = 'n(q)=#(x,y) s.t. (x-x^2)y^2+x^2y-1=0, x,y not in {0,1}, and y not in {x^{-1}, 1+x^{-1}, x(x-1)^{-1}}. Total degree=4, dimension=1.'
+Descriptions[84] = 'n(q)=#(x,y) s.t. (x-1)y^2+(x-2)(x-1)y-1=0, x not in {0,1,2}, y not in {0,1}, and y ne (2-x)^{-1}. Total degree=3, dimension=1.'
+Descriptions[85] = 'n(q)=#(x,y) s.t. (x^2-x)y^2-(x^2-1)y+x=0, (x^2-x)y-(x^2+x-1) ne 0, (x-1)y-(2x-1) ne 0, x,y not in {0,1}, and y not in {x^{-1}, 1+x^{-1}, x(x-1)^{-1}}. Total degree=4, dimension=1.'
+Descriptions[86] = 'n(q)=#x s.t. x^3-2x^2+3x-1=0. Total degree=3, dimension=0, discriminant=-23.'
+Descriptions[87] = 'n(q)=0 if 2,3|q, 1 otherwise.'
+Descriptions[88] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2+1 ne 0 and x not in {-1,0,1}. Total degree: N/A, dimension=1.'
+Descriptions[89] = 'This superfiguration is unrealizable; anti-Pappian.'
+Descriptions[90] = 'n(q)=#x s.t. x^4-x^3+x^2-x+1=0. Total degree=4, dimension=0, discriminant=125.'
+Descriptions[91] = 'n(q)=0 if 2,3|q, 1 otherwise.'
+Descriptions[92] = 'This superfiguration is unrealizable; anti-Pappian.'
+Descriptions[93] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2-x+1=0 and x ne -1. Total degree=2, dimension=0, discriminant=-3.'
 Descriptions[94] = 'This superfiguration is unrealizable; anti-Pappian.'
-Descriptions[95] = 'n(q)=q-3 if 3|q, 0 otherwise.'
-Descriptions[96] = 'n(q)=0 if 2,3|q, 1 otherwise.'
-Descriptions[97] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
-Descriptions[98] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2+x+1=0 and x ne 1. Total degree=2, dimension=0, discriminant=-3.'
-Descriptions[99] = 'n(q)=#x s.t. x^3+x^2-1=0 and x^2+1 ne 0. Total degree=3, dimension=0, discriminant=-23.'
-Descriptions[100] = 'n(q)=#x s.t. 3x^2-3x+1=0 and x^2-x+1 ne 0. Total degree=2, dimension=0, discriminant=-3.'
-Descriptions[101] = 'This superfiguration is unrealizable; anti-Pappian.'
-Descriptions[102] = 'n(q)=0 if 2,3,5|q, 1 otherwise.'
-Descriptions[103] = 'n(q)=#x s.t. x^3-3x^2+2x-1=0 and 2x ne 1. Total degree=3, dimension=0, discriminant=-23.'
-Descriptions[104] = 'n(q)=0 if 2,3|q, 1 otherwise.'
-Descriptions[105] = 'This superfiguration is unrealizable; anti-Pappian.'
-Descriptions[106] = 'n(q)=#x s.t. x^2-2=0 and x ne 0. Total degree=2, dimension=0, discriminant=8.'
-Descriptions[107] = 'n(q)=#x s.t. x^2-x+2=0 and x not in {-1,0,1}. Total degree=2, dimension=0, discriminant=-7.'
-Descriptions[108] = 'n(q)=0 if 2,3|q, 1 otherwise.'
-Descriptions[109] = 'n(q)=#x s.t. x^2+2x+2=0 and x not in {0,1}. Total degree=2, dimension=0, discriminant=-4.'
-Descriptions[110] = 'n(q)=#x s.t. x^3-3x^2+2x-1=0. Total degree=3, dimension=0, discriminant=-23.'
-Descriptions[111] = 'n(q)=0 if 2,3,5|q; 1 otherwise.'
-Descriptions[112] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
-Descriptions[113] = 'n(q)=#x s.t. x^3-4x^2+3x+1=0. Total degree=3, dimension=0, discriminant=49.'
-Descriptions[114] = 'This superfiguration is unrealizable; anti-Pappian.'
-Descriptions[115] = 'n(q)=2 if q=2^{2k}, 0 otherwise.'
-Descriptions[116] = 'n(q)=1 if 5|q, 0 otherwise.'
-Descriptions[117] = 'This superfiguration is unrealizable; anti-Pappian.'
-Descriptions[118] = 'n(q)=#x s.t. x^3+x^2-1=0 and x^2+1 ne 0. Total degree=3, dimension=0, discriminant=-23.'
-Descriptions[119] = 'This superfiguration is unrealizable; anti-Pappian.'
-Descriptions[120] = 'n(q)=#x s.t. x^2-x-1=0 and x^2+x-1 ne 0. Total degree=2, dimension=0, discriminant=5.'
-Descriptions[121] = 'n(q)=0 if 2|q, q-3 if 3|q, q-5 otherwise.'
-Descriptions[122] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
-Descriptions[123] = 'n(q)=#x s.t. x^2-3x+3=0, x^2-x-1 ne 0, 2x^2-4x+2 ne 0, and x ne 0. Total degree=2, dimension=0, discriminant=-3.'
-Descriptions[124] = 'n(q)=0 if 2,3,5|q, 1 otherwise.'
-Descriptions[125] = 'n(q)=#x s.t. x^3+x^2-2x+2=0, x^2+1 ne 0, 2x^2-2x+1 ne 0, x^2-x+1 ne 0, and x not in {0,1}. Total degree=3, dimension=0, discriminant=-152.'
-Descriptions[126] = 'n(q)=#x s.t. x^3-4x^2+5x-1=0 and x^2-x-1 ne 0. Total degree=3, dimension=0, discriminant=-23.'
-Descriptions[127] = 'n(q)=#x s.t. x^3-4x^2+6x-2=0 and x not in {0,2}. Total degree=3, dimension=0, discriminant=-44.'
-Descriptions[128] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
-Descriptions[129] = 'This superfiguration is unrealizable; anti-Pappian.'
-Descriptions[130] = 'n(q)=0 if 2|q, q-3 if 3|q, and q-5 otherwise.'
-Descriptions[131] = 'n(q)=#x s.t. x not in {-1,0,1} and x^2+x-1 ne 0. Total degree: N/A, dimension=1.'
-Descriptions[132] = 'n(q)=#x s.t. x^2-4x+2=0 and x not in {0,2}. Total degree=2, dimension=0, discriminant=8.'
-Descriptions[133] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2+x-1=0. Total degree=2, dimension=0, discriminant=5.'
-Descriptions[134] = 'This superfiguration is unrealizable; anti-Pappian.'
-Descriptions[135] = 'n(q)=#x s.t. x^3-2x^2+x-1=0, x^2-x+1 ne 0, and x^2-2x+2 ne 0. Total degree=3, dimension=0, discriminant=-23.'
-Descriptions[136] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2-x-1=0. Total degree=2, dimension=0, discriminant=5.'
-Descriptions[137] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2+1=0. Total degree=2, dimension=0, discriminant=-4.'
-Descriptions[138] = 'n(q)=q-2 if 2|q and 0 otherwise.'
-Descriptions[139] = 'This superfiguration is unrealizable; anti-Pappian.'
-Descriptions[140] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
-Descriptions[141] = 'n(q)=0 if 2,3|q, 1 otherwise.'
-Descriptions[142] = 'n(q)=1 if 5|q and 0 otherwise.'
-Descriptions[143] = 'This superfiguration is unrealizable; anti-Pappian.'
-Descriptions[144] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
-Descriptions[145] = 'n(q)=1 if 3|q, 0 otherwise.'
-Descriptions[146] = 'n(q)=1 if 5|q, 0 otherwise.'
-Descriptions[147] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
-Descriptions[148] = 'n(q)=2 if q=2^{2k}, 0 otherwise.'
-Descriptions[149] = 'n(q)=1 if 3|q, 0 otherwise.'
+Descriptions[95] = 'This superfiguration is unrealizable; anti-Pappian.'
+Descriptions[96] = 'n(q)=q-3 if 3|q, 0 otherwise.'
+Descriptions[97] = 'n(q)=0 if 2,3|q, 1 otherwise.'
+Descriptions[98] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
+Descriptions[99] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2+x+1=0 and x ne 1. Total degree=2, dimension=0, discriminant=-3.'
+Descriptions[100] = 'n(q)=#x s.t. x^3+x^2-1=0 and x^2+1 ne 0. Total degree=3, dimension=0, discriminant=-23.'
+Descriptions[101] = 'n(q)=#x s.t. 3x^2-3x+1=0 and x^2-x+1 ne 0. Total degree=2, dimension=0, discriminant=-3.'
+Descriptions[102] = 'This superfiguration is unrealizable; anti-Pappian.'
+Descriptions[103] = 'n(q)=0 if 2,3,5|q, 1 otherwise.'
+Descriptions[104] = 'n(q)=#x s.t. x^3-3x^2+2x-1=0 and 2x ne 1. Total degree=3, dimension=0, discriminant=-23.'
+Descriptions[105] = 'n(q)=0 if 2,3|q, 1 otherwise.'
+Descriptions[106] = 'This superfiguration is unrealizable; anti-Pappian.'
+Descriptions[107] = 'n(q)=#x s.t. x^2-2=0 and x ne 0. Total degree=2, dimension=0, discriminant=8.'
+Descriptions[108] = 'n(q)=#x s.t. x^2-x+2=0 and x not in {-1,0,1}. Total degree=2, dimension=0, discriminant=-7.'
+Descriptions[109] = 'n(q)=0 if 2,3|q, 1 otherwise.'
+Descriptions[110] = 'n(q)=#x s.t. x^2+2x+2=0 and x not in {0,1}. Total degree=2, dimension=0, discriminant=-4.'
+Descriptions[111] = 'n(q)=#x s.t. x^3-3x^2+2x-1=0. Total degree=3, dimension=0, discriminant=-23.'
+Descriptions[112] = 'n(q)=0 if 2,3,5|q; 1 otherwise.'
+Descriptions[113] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
+Descriptions[114] = 'n(q)=#x s.t. x^3-4x^2+3x+1=0. Total degree=3, dimension=0, discriminant=49.'
+Descriptions[115] = 'This superfiguration is unrealizable; anti-Pappian.'
+Descriptions[116] = 'n(q)=2 if q=2^{2k}, 0 otherwise.'
+Descriptions[117] = 'n(q)=1 if 5|q, 0 otherwise.'
+Descriptions[118] = 'This superfiguration is unrealizable; anti-Pappian.'
+Descriptions[119] = 'n(q)=#x s.t. x^3+x^2-1=0 and x^2+1 ne 0. Total degree=3, dimension=0, discriminant=-23.'
+Descriptions[120] = 'This superfiguration is unrealizable; anti-Pappian.'
+Descriptions[121] = 'n(q)=#x s.t. x^2-x-1=0 and x^2+x-1 ne 0. Total degree=2, dimension=0, discriminant=5.'
+Descriptions[122] = 'n(q)=0 if 2|q, q-3 if 3|q, q-5 otherwise.'
+Descriptions[123] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
+Descriptions[124] = 'n(q)=#x s.t. x^2-3x+3=0, x^2-x-1 ne 0, 2x^2-4x+2 ne 0, and x ne 0. Total degree=2, dimension=0, discriminant=-3.'
+Descriptions[125] = 'n(q)=0 if 2,3,5|q, 1 otherwise.'
+Descriptions[126] = 'n(q)=#x s.t. x^3+x^2-2x+2=0, x^2+1 ne 0, 2x^2-2x+1 ne 0, x^2-x+1 ne 0, and x not in {0,1}. Total degree=3, dimension=0, discriminant=-152.'
+Descriptions[127] = 'n(q)=#x s.t. x^3-4x^2+5x-1=0 and x^2-x-1 ne 0. Total degree=3, dimension=0, discriminant=-23.'
+Descriptions[128] = 'n(q)=#x s.t. x^3-4x^2+6x-2=0 and x not in {0,2}. Total degree=3, dimension=0, discriminant=-44.'
+Descriptions[129] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
+Descriptions[130] = 'This superfiguration is unrealizable; anti-Pappian.'
+Descriptions[131] = 'n(q)=0 if 2|q, q-3 if 3|q, and q-5 otherwise.'
+Descriptions[132] = 'n(q)=#x s.t. x not in {-1,0,1} and x^2+x-1 ne 0. Total degree: N/A, dimension=1.'
+Descriptions[133] = 'n(q)=#x s.t. x^2-4x+2=0 and x not in {0,2}. Total degree=2, dimension=0, discriminant=8.'
+Descriptions[134] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2+x-1=0. Total degree=2, dimension=0, discriminant=5.'
+Descriptions[135] = 'This superfiguration is unrealizable; anti-Pappian.'
+Descriptions[136] = 'n(q)=#x s.t. x^3-2x^2+x-1=0, x^2-x+1 ne 0, and x^2-2x+2 ne 0. Total degree=3, dimension=0, discriminant=-23.'
+Descriptions[137] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2-x-1=0. Total degree=2, dimension=0, discriminant=5.'
+Descriptions[138] = 'n(q)=0 if 2|q. Otherwise, n(q)=#x s.t. x^2+1=0. Total degree=2, dimension=0, discriminant=-4.'
+Descriptions[139] = 'n(q)=q-2 if 2|q and 0 otherwise.'
+Descriptions[140] = 'This superfiguration is unrealizable; anti-Pappian.'
+Descriptions[141] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
+Descriptions[142] = 'n(q)=0 if 2,3|q, 1 otherwise.'
+Descriptions[143] = 'n(q)=1 if 5|q and 0 otherwise.'
+Descriptions[144] = 'This superfiguration is unrealizable; anti-Pappian.'
+Descriptions[145] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
+Descriptions[146] = 'n(q)=1 if 3|q, 0 otherwise.'
+Descriptions[147] = 'n(q)=1 if 5|q, 0 otherwise.'
+Descriptions[148] = 'This superfiguration is unrealizable in any projective plane over a finite field.'
+Descriptions[149] = 'n(q)=2 if q=2^{2k}, 0 otherwise.'
 Descriptions[150] = 'n(q)=#x s.t. x^2-x-1=0. Total degree=2, dimension=0, discriminant=5.'
 
 for (var i = 0; i < 12; i++) {
@@ -2273,6 +2274,7 @@ var AutomorphismGroups = [
 6,
 2,
 6,
+24,
 1,
 2,
 2,
@@ -2371,7 +2373,6 @@ var AutomorphismGroups = [
 3,
 6,
 24,
-24,
 20]
 
 
@@ -2440,6 +2441,7 @@ var SmallRealizability = [
 [0,0,0,0,0,0,0,0,0,0,0],
 [0,2,0,0,0,0,0,0,2,0,0],
 [0,0,0,0,0,0,0,0,0,0,0],
+[1,0,0,0,0,1,0,0,0,0,0,0],
 [0,0,0,2,0,4,4,10,12,12,12],
 [0,0,0,2,6,4,8,6,12,12,14],
 [0,0,0,2,6,2,4,8,12,14,10],
@@ -2538,6 +2540,5 @@ var SmallRealizability = [
 [0,0,1,0,0,0,0,0,0,0,0,0],
 [0,0,0,0,0,0,0,0,0,0,0,0],
 [0,2,0,0,0,0,0,0,2,0,0,0],
-[1,0,0,0,0,1,0,0,0,0,0,0],
 ["?","?","?","?","?","?","?","?","?","?","?","?"]
 ];
