@@ -71,7 +71,7 @@ $(function() {
   for (var i = 0; i < NumberOfConfigurations; i++) {
     var item = i + 1;
     if (Names[i].charAt(0) == '*') {
-      item = '<color="red">' + item + '</color>';
+      item = item + '*';
     }
     item = '<a>' + item + '</a>';
     $(item)
