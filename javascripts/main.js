@@ -70,7 +70,7 @@ $(function() {
   var $sidebar = $(".nav-pills");
   for (var i = 0; i < NumberOfConfigurations; i++) {
     var item = i + 1;
-    if (Names[i][0] == '*') {
+    if (Names[i].charAt(0) == '*') {
       item = '<b>' + item + </b>;
     }
     item = '<a>' + item + '</a>';
