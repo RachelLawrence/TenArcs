@@ -78,18 +78,4 @@ $(function() {
         };
       })(i));
   };
-  
-  var $sidebar2 = $(".navig");
-  
-  for (var i = 0; i < NumberOfConfigurations; i++) {
-    var item = '<a>' + (i + 1) + '</a>';
-    var locate = $(".td" + points[i].length);
-    $(item)
-      .appendTo ( locate )
-      .click((function(_i) {
-        return function(e) {
-          render(_i);
-        };
-      })(i));
-  };
 });
