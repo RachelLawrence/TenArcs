@@ -67,6 +67,20 @@ In more quotidian terms, a superfiguration is a bipartite graph with the parts m
 <p>Click the <a href = "configExplorer.html">Configurations</a> link to start exploring. For each superfiguration, first we give the incidence data defining the superfiguration. We list the final polynomial system for that superfiguration, the degree of the polynomial system, and the dimension of the quasi-projective variety defined by that polynomial system. Then we give the size of the automorphism group. To help with heuristic understanding, we give counts for how many realizations that superfiguration has on finite projective planes up to order 19. Particularly interesting cases, such as the Desargues configuration, are described in more detail.
 </p>
 
+<h3>Methodology</h3>
+
+<p>
+Classical lists existed of superfigurations on up to nine points. To identify ten-point superfigurations, we used McKay's graph theory library Nauty via the programming language Sage, and confirmed the results by hand and via computational methods. The superfigurations were stored in a Sage program in terms of their <a href="http://mathworld.wolfram.com/LeviGraph.html">Levi graphs</a>.
+</p>
+<p>
+The automorphism groups were then calculated using Sage's graph library, adjusting to ensure that only automorphisms which preserved the distinction between points and lines were considered.
+</p>
+<p>
+To count realizations over small projective planes, we wrote a program which brute-force searches a projective plane for all point subsets which have the collinearity rules encoded by the superfiguration. We do not count weak realizations, that is, sets of points which satisfy additional collinearity relations. Following Iampolskaia, Skorobogatov, and Sorokin, we count these realizations up to projective equivalence. This means that the first four points are assumed to be [1:0:0], [0:1:0], [0:0:1], and [1:1:1]. To translate this into a count of strong realizations, one multiplies by the number of 4-arcs in the projective plane. For more information, see Iampolskaia, Skorobogatov, and Sorokin. We count up to order 19 because the search in order 23 had a prohibitively long runtime.
+</p>
+<p>
+To understand the relevance of the polynomial systems and how they were obtained, see our paper.
+</p>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
