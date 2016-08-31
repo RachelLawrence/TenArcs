@@ -1995,12 +1995,12 @@ var Points = [
 ];
 
 var Names = [
-    'Fano', 'Mobius-Kantor', '9 Point 1', '9 Point 2', '9 Point 3', '9 Point 4', '9 Point 5', '9 Point 6', '9 Point 7', '9 Point 8', '9 Point 9', '9 Point 10',
+    '*Fano', '*Mobius-Kantor', '9 Point 1', '9 Point 2', '9 Point 3', '9 Point 4', '9 Point 5', '9 Point 6', '9 Point 7', '9 Point 8', '9 Point 9', '9 Point 10',
     
-    'ConfigDual-9-4', 'ConfigDual-9-5', 'ConfigDual-9-6', 'Con-10-0 #1 (Desargues)',
+    '*ConfigDual-9-4', '*ConfigDual-9-5', '*ConfigDual-9-6', '*Con-10-0 #1 (Desargues)',
     'Con-10-0 #2', 'Con-10-0 #3', 'Con-10-0 #4', 'Con-10-0 #5', 'Con-10-0 #6',
     'Con-10-0 #7', 'Con-10-0 #8', 'Con-10-0 #9', 'Con-10-0 #10', 'Con-10-1-R #1',
-    'Con-10-1-R #2', 'Con-10-1-R #3', 'Con-10-1-R #4', 'Con-10-1-R #5 (Dual to Con-10-1-R #4)', 'Con-10-1-R #6 (Anti-Desargues No. 1)',
+    'Con-10-1-R #2', 'Con-10-1-R #3', '*Con-10-1-R #4', '*Con-10-1-R #5 (Dual to Con-10-1-R #4)', 'Con-10-1-R #6 (Anti-Desargues No. 1)',
     'Con-10-1-R #7', 'Con-10-1-R #8', 'Con-10-1 Un. #1', 'Con-10-1 Un. #2', 'Con-10-1 Un. #3',
     'Con-10-1 Un. #4', 'Con-10-1 Un. #5', 'Con-10-1 Un. #6', 'Con-10-1 Un. #7',
     'Con-10-1 Un. #8', 'Con-10-1 Un. #9', 'Con-10-1 Un. #10', 'Con-10-1 Un. #11',
@@ -2008,8 +2008,8 @@ var Names = [
     'Con-10-2 Un. #4: Dreidel', 'Con-10-2 Un. #5: Robot', 'Con-10-2 R #1',
     'Con-10-2 R #2', 'Con-10-2 R #3 (Anti-Desargues No. 2)', 'Con-10-2 R #4',
     'Con-10-2 R #5', 'Con-10-2 R #6', 'Con-10-2 R #7', 'Con-10-3 #1', 'Con-10-3 #2',
-    'Con-10-3 #3', 'Con-10-3 #4 (UberFano / Anti-Desargues No. 3) Dual to Con-10-3 #6', 'Con-10-3 #5', 'Con-10-3 #6 (Dual to Con-10-3 #4)',
-    'Con-10-4 #1: MindFuck',
+    'Con-10-3 #3', '*Con-10-3 #4 (UberFano / Anti-Desargues No. 3) Dual to Con-10-3 #6', 'Con-10-3 #5', '*Con-10-3 #6 (Dual to Con-10-3 #4)',
+    '*Con-10-4 #1: MindFuck',
     'Con-11-0 #1', 'Con-11-0 #2', 'Con-11-0 #3', 'Con-11-0 #4', 'Con-11-0 #5',
     'Con-11-0 #6', 'Con-11-0 #7', 'Con-11-0 #8', 'Con-11-0 #9', 'Con-11-0 #10',
     'Con-11-0 #11', 'Con-11-0 #12', 'Con-11-0 #13', 'Con-11-0 #14', 'Con-11-0 #15',
@@ -2034,9 +2034,9 @@ var Names = [
     'Con-12-0 Reachable #17', 'Con-12-0 Reachable #18', 'Con-12-0: Unreachable #1 (EvilGrid)',
     'Con-12-1 #1', 'Con-12-1 #2', 'Con-12-1 #3', 'Con-12-1 #4', 'Con-12-1 #5',
     'Con-12-1 #6', 'Con-12-1 #7', 'Con-12-2 #1: The Lawrence Superconfiguration',
-    'Con-12-3 #1: Woop!', 'Con-13-0 #1', 'Con-13-0 #2', 'Con-13-1 #1: Maximal Incidence',
+    'Con-12-3 #1: Woop!', 'Con-13-0 #1', 'Con-13-0 #2', '*Con-13-1 #1: Maximal Incidence',
 
-    'The Dancing Starfish'
+    '*The Dancing Starfish'
 ];
 
 
