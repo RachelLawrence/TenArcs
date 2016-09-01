@@ -13,7 +13,7 @@ $(function() {
 
   function render(i) {
     // Update Name
-    $main.find('.config-name').text(configs[i][0]);
+    $main.find('.config-name').text(Names[i]);
 
     // Update description
     $main.find('.config-description').text(Descriptions[i]);
