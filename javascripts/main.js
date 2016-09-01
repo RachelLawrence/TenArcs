@@ -71,9 +71,10 @@ $(function() {
   for (var i = 0; i < NumberOfConfigurations; i++) {
     var item = i + 1;
     if (configs[i][0].charAt(0) == '*') {
-      item = '<p style="font-weight:bold">' + item + '*' + '</p>';
+      item = '<bold>' + item + '*' + '</bold>';
+    } else {
+      item = '<a>' + item + '</a>';
     }
-    item = '<a>' + item + '</a>';
     $(item)
       .appendTo($sidebar)
       .click((function(_i) {
