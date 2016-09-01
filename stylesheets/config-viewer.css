@@ -14,6 +14,12 @@
 	border: 1px solid #ccc;
 }
 
+.nav-pills a:bold {
+	font-weight: bold;	
+}
+
+}
+
 .navig {
 	width: 100%;
 	display: flex;
