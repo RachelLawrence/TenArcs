@@ -71,22 +71,22 @@ $(function() {
   for (var i = 0; i < NumberOfConfigurations; i++) {
     
     var classList = [];
-    if (configs[i][0].charAt(0) == '*') {
-      classList.push("bo");
-    }
-    if (configs[i][5] == 0) {
-      classList.push("dim-zero");
-    } else if (configs[i][5] == 1) {
-      classList.push("dim-one");
-    } else {
-      classList.push("dim-unclear");
-    } 
+    //if (configs[i][0].charAt(0) == '*') {
+    //  classList.push("bo");
+    //}
+    //if (configs[i][5] == 0) {
+    //  classList.push("dim-zero");
+    //} else if (configs[i][5] == 1) {
+    //  classList.push("dim-one");
+    //} else {
+    //  classList.push("dim-unclear");
+    //} 
     
-    var middlePiece = 'class="pill';
+    var middlePiece = '';
     for (var c = 0; c < classList.Length; c++) {
       middlePiece = middlePiece + ' ' + classList[c];
     }
-    var item = '<a ' + middlePiece + '">' + (i + 1) + '</a>';
+    var item = '<a class="pill' + middlePiece + '">' + (i + 1) + '</a>';
     
     $(item)
       .appendTo($sidebar)
