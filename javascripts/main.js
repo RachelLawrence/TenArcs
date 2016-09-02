@@ -144,6 +144,11 @@ function showNPoints (value) {
   }
 }
 
+function showNLines (value) {
+  $(".pill").hide();
+  $("." + value + "lines").show();
+}
+
 function showAll() {
   $(".pill").show();
 }
