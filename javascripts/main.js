@@ -71,14 +71,21 @@ $(function() {
   for (var i = 0; i < NumberOfConfigurations; i++) {
     var item = i + 1;
     
-    var classList = [];
+    var classList = ["pill"];
     
     if (configs[i][0].charAt(0) == '*') {
       //item = '<a class="bo">' + item + '</a>';
       classList.push("bo");
-    } else {
-      //item = '<a>' + item + '</a>';
     }
+    if (configs[i][5] == 0) {
+      classList.push("dim-zero")
+    } else if (configs[i][5] == 1) {
+      classList.push("dim-one")
+    } else {
+      classList.push("dim-unclear")
+    } 
+    
+    
     item = '>' + item + '</a>';
     for (var c = 0; c < classList.Length; c++) {
       item = 'class="' + classList[c] + '"' + item;
@@ -96,7 +103,7 @@ $(function() {
 });
 
 function showDim( value ) {
-  $("a").hide();
+  $(".pill").hide();
   if (value == 0) {
     $(".dim-zero").show();
   }
@@ -109,5 +116,5 @@ function showDim( value ) {
 }
 
 function showAll() {
-  $("a").show();
+  $(".pill").show();
 }
