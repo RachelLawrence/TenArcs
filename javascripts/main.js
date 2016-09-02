@@ -71,17 +71,17 @@ $(function() {
   for (var i = 0; i < NumberOfConfigurations; i++) {
     
     var classList = [];
-    classList.push dim-one
+    classList.push("dim-one");
     
     if (configs[i][0].charAt(0) == '*') {
       classList.push("bo");
     }
     if (configs[i][5] == 0) {
-      classList.push("dim-zero")
+      classList.push("dim-zero");
     } else if (configs[i][5] == 1) {
-      classList.push("dim-one")
+      classList.push("dim-one");
     } else {
-      classList.push("dim-unclear")
+      classList.push("dim-unclear");
     } 
     
     var middlePiece = 'class="pill';
