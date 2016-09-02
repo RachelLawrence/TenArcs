@@ -71,11 +71,6 @@ $(function() {
   for (var i = 0; i < NumberOfConfigurations; i++) {
     
     var item = '<a class="pill">' + (i+1) + '</a>';
-    if (configs[i][5]==0) {
-      $(.current).addClass("dim-zero"); 
-    }
-    $(.current).removeClass("current");
-    
     $(item)
       .appendTo($sidebar)
       .click((function(_i) {
