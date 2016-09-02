@@ -71,9 +71,9 @@ $(function() {
   for (var i = 0; i < NumberOfConfigurations; i++) {
     
     var item = 'pill">' + (i+1) + '</a>';
-    //if (configs[i][5] == 0) {
-    //  item = 'dim-zero ' + item;
-    //}
+    if (configs[i][5] == 0) {
+      item = 'dim-zero ' + item;
+    }
     item = '<a class="' + item;
     $(item)
       .appendTo($sidebar)
