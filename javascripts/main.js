@@ -79,6 +79,15 @@ $(function() {
     else {
       item = 'dim-unclear ' + item;
     }
+    if (configs[i][6] == '-') {
+      item = 'realizable-unclear ' + item;
+    }
+    if (configs[i][6]) {
+      item = 'realizable-yes ' + item;
+    }
+    if (configs[i][6] == false) {
+      item = 'realizable-no ' + item;
+    }
     item = '<a class="' + item;
     $(item)
       .appendTo($sidebar)
@@ -99,6 +108,18 @@ function showDim( value ) {
   }
   else {
     $(".dim-unclear").show();
+  } 
+}
+
+function showRealizable( value ) {
+  $(".pill").hide();
+  if (value == '?') {
+    $(".realizable-unclear").show();
+  } else if (value) {
+    $(".realizable-yes").show();
+  }
+  else {
+    $(".realizable-no").show();
   } 
 }
 
