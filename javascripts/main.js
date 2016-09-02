@@ -83,8 +83,8 @@ $(function() {
         };
       })(i));
   };
-  
-  function hidethem() {
-    $(".bo").hide();
-  }
 });
+
+function hidethem() {
+  $(".bo").hide();
+}
