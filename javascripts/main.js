@@ -70,23 +70,11 @@ $(function() {
   var $sidebar = $(".nav-pills");
   for (var i = 0; i < NumberOfConfigurations; i++) {
     
-    var classList = [];
-    //if (configs[i][0].charAt(0) == '*') {
-    //  classList.push("bo");
-    //}
-    //if (configs[i][5] == 0) {
-    //  classList.push("dim-zero");
-    //} else if (configs[i][5] == 1) {
-    //  classList.push("dim-one");
-    //} else {
-    //  classList.push("dim-unclear");
-    //} 
-    
-    var middlePiece = '';
-    for (var c = 0; c < classList.Length; c++) {
-      middlePiece = middlePiece + " " + classList[c];
+    var item = '<a class="pill current">' + (i+1) + </a>';
+    if (configs[i][5]==0) {
+      $(.current).addClass("dim-zero"); 
     }
-    var item = '<a class="dim-one' + middlePiece + '">' + (i + 1) + '</a>';
+    $(.current).removeClass("current");
     
     $(item)
       .appendTo($sidebar)
