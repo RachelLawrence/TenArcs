@@ -71,6 +71,7 @@ $(function() {
   for (var i = 0; i < NumberOfConfigurations; i++) {
     
     var item = 'pill">' + (i+1) + '</a>';
+    item = configs[i][7] + ' ' + item;
     if (configs[i][5] == 0) {
       item = 'dim-zero ' + item;
     } else if (configs[i][5] == 1) {
@@ -121,6 +122,25 @@ function showRealizable( value ) {
   else {
     $(".realizable-no").show();
   } 
+}
+
+function showNPoints (value) {
+  $(".pill").hide();
+  if (value == 7) {
+    $(".7point").show();
+  }
+  if (value == 8) {
+    $(".8point").show();
+  }
+  if (value == 9) {
+    $(".9point").show();
+  }
+  if (value == 10) {
+    $(".pill").show();
+    $(".7point").hide();
+    $(".8point").hide();
+    $(".9point").hide();
+  }
 }
 
 function showAll() {
