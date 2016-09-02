@@ -84,7 +84,7 @@ $(function() {
     
     var middlePiece = '';
     for (var c = 0; c < classList.Length; c++) {
-      middlePiece = middlePiece + ' ' + classList[c];
+      middlePiece = middlePiece + " " + classList[c];
     }
     var item = '<a class="pill' + middlePiece + '">' + (i + 1) + '</a>';
     
