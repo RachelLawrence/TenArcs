@@ -74,7 +74,7 @@ $(function() {
     //if (configs[i][5] == 0) {
     //  item = 'dim-zero ' + item;
     //}
-    item = item + '<a class= "';
+    item = item + '<a class="';
     $(item)
       .appendTo($sidebar)
       .click((function(_i) {
