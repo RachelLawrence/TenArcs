@@ -71,9 +71,9 @@ $(function() {
   for (var i = 0; i < NumberOfConfigurations; i++) {
     
     var classList = [];
-    if (configs[i][0].charAt(0) == '*') {
-      classList.push("bo");
-    }
+    //if (configs[i][0].charAt(0) == '*') {
+    //  classList.push("bo");
+    //}
     //if (configs[i][5] == 0) {
     //  classList.push("dim-zero");
     //} else if (configs[i][5] == 1) {
