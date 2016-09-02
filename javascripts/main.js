@@ -86,7 +86,7 @@ $(function() {
     for (var c = 0; c < classList.Length; c++) {
       middlePiece = middlePiece + " " + classList[c];
     }
-    var item = '<a class="bo' + middlePiece + '">' + (i + 1) + '</a>';
+    var item = '<a class="dim-one' + middlePiece + '">' + (i + 1) + '</a>';
     
     $(item)
       .appendTo($sidebar)
