@@ -70,11 +70,11 @@ $(function() {
   var $sidebar = $(".nav-pills");
   for (var i = 0; i < NumberOfConfigurations; i++) {
     
-    var item = '<a class="current pill">' + (i+1) + '</a>';
+    var item = '<a class="current">' + (i+1) + '</a>';
     if (configs[i][5] == 0) {
       $(.current).addClass("dim-zero");
     }
-    $(.current).removeClass("current");
+    $(.current).addClass("pill").removeClass("current");
     $(item)
       .appendTo($sidebar)
       .click((function(_i) {
