@@ -70,7 +70,7 @@ $(function() {
   var $sidebar = $(".nav-pills");
   for (var i = 0; i < NumberOfConfigurations; i++) {
     
-    var item = '<a class="pill">' + (i+1) + '</a>';
+    var item = '<a class="pill dim-one">' + (i+1) + '</a>';
     $(item)
       .appendTo($sidebar)
       .click((function(_i) {
