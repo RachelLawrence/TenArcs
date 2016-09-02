@@ -107,3 +107,7 @@ function showDim( value ) {
     $(".dim-unclear").show();
   } 
 }
+
+function showAll() {
+  $("a").show();
+}
