@@ -73,6 +73,11 @@ $(function() {
     var item = 'pill">' + (i+1) + '</a>';
     if (configs[i][5] == 0) {
       item = 'dim-zero ' + item;
+    } else if (configs[i][5] == 1) {
+      item = 'dim-one ' + item;
+    }
+    else {
+      item = 'dim-unclear ' + item;
     }
     item = '<a class="' + item;
     $(item)
