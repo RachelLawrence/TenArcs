@@ -106,8 +106,7 @@ function showDim( value ) {
   $(".pill").hide();
   if (value == 0) {
     $(".dim-zero").show();
-  }
-  if (value == 1) {
+  } else if (value == 1) {
     $(".dim-one").show();
   }
   else {
