@@ -70,11 +70,21 @@ $(function() {
   var $sidebar = $(".nav-pills");
   for (var i = 0; i < NumberOfConfigurations; i++) {
     var item = i + 1;
+    
+    var classList = [];
+    
     if (configs[i][0].charAt(0) == '*') {
-      item = '<a class="bo">' + item + '</a>';
+      //item = '<a class="bo">' + item + '</a>';
+      classList.push("bo");
     } else {
-      item = '<a>' + item + '</a>';
+      //item = '<a>' + item + '</a>';
     }
+    item = '>' + item + '</a>';
+    for (var c = 0; c < classList.Length; c++) {
+      item = 'class="' + classList[c] + '"' + item;
+    }
+    item = '<a ' + item;
+    
     $(item)
       .appendTo($sidebar)
       .click((function(_i) {
@@ -85,6 +95,15 @@ $(function() {
   };
 });
 
-function hidethem() {
-  $(".bo").hide();
+function showDim( value ) {
+  $("a").hide();
+  if (value == 0) {
+    $(".dim-zero").show();
+  }
+  if (value == 1) {
+    $(".dim-one").show();
+  }
+  else {
+    $(".dim-unclear").show();
+  } 
 }
