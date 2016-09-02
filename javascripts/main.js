@@ -86,7 +86,7 @@ $(function() {
     for (var c = 0; c < classList.Length; c++) {
       middlePiece = middlePiece + " " + classList[c];
     }
-    var item = '<a class="dim-one' + middlePiece + '">' + (i + 1) + '</a>';
+    var item = '<a class="dimone' + middlePiece + '">' + (i + 1) + '</a>';
     
     $(item)
       .appendTo($sidebar)
@@ -101,12 +101,12 @@ $(function() {
 function showDim( value ) {
   $(".pill").hide();
   if (value == 0) {
-    $(".dim-zero").show();
+    $(".dimzero").show();
   } else if (value == 1) {
-    $(".dim-one").show();
+    $(".dimone").show();
   }
   else {
-    $(".dim-unclear").show();
+    $(".dimunclear").show();
   } 
 }
 
