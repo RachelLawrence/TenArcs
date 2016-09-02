@@ -69,12 +69,11 @@ $(function() {
 
   var $sidebar = $(".nav-pills");
   for (var i = 0; i < NumberOfConfigurations; i++) {
-    var item = i + 1;
+    var item = '>' + (i + 1) + '</a>';
     
-    var classList = ["pill"];
+    var classList = [];
     
     if (configs[i][0].charAt(0) == '*') {
-      //item = '<a class="bo">' + item + '</a>';
       classList.push("bo");
     }
     if (configs[i][5] == 0) {
@@ -85,12 +84,12 @@ $(function() {
       classList.push("dim-unclear")
     } 
     
-    
-    item = '>' + item + '</a>';
+    var middlePiece = 'class="pill';
     for (var c = 0; c < classList.Length; c++) {
-      item = 'class="' + classList[c] + '"' + item;
+      middlePiece = middlePiece + ' ' + classList[c];
     }
-    item = '<a ' + item;
+    middlePiece = middlePiece + '"';
+    item = '<a ' + middlePiece + item;
     
     $(item)
       .appendTo($sidebar)
