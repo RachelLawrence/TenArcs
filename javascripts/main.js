@@ -69,7 +69,6 @@ $(function() {
 
   var $sidebar = $(".nav-pills");
   for (var i = 0; i < NumberOfConfigurations; i++) {
-    var item = '>' + (i + 1) + '</a>';
     
     var classList = [];
     
@@ -88,8 +87,7 @@ $(function() {
     for (var c = 0; c < classList.Length; c++) {
       middlePiece = middlePiece + ' ' + classList[c];
     }
-    middlePiece = middlePiece + '"';
-    item = '<a ' + middlePiece + item;
+    var item = '<a ' + middlePiece + '">' + (i + 1) + '</a>';
     
     $(item)
       .appendTo($sidebar)
