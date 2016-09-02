@@ -71,6 +71,7 @@ $(function() {
   for (var i = 0; i < NumberOfConfigurations; i++) {
     
     var classList = [];
+    classList.push dim-one
     
     if (configs[i][0].charAt(0) == '*') {
       classList.push("bo");
