@@ -72,6 +72,7 @@ $(function() {
     
     var item = 'pill">' + (i+1) + '</a>';
     item = configs[i][7] + ' ' + item;
+    item = configs[i][1].length + 'lines ' + item;
     if (configs[i][5] == 0) {
       item = 'dim-zero ' + item;
     } else if (configs[i][5] == 1) {
