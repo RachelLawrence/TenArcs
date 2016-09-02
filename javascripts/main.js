@@ -77,11 +77,11 @@ $(function() {
     }
     if (configs[i][5] == 0) {
       classList.push("dim-zero")
-    }// else if (configs[i][5] == 1) {
-    //  classList.push("dim-one")
-    //} else {
-    //  classList.push("dim-unclear")
-    //} 
+    } else if (configs[i][5] == 1) {
+      classList.push("dim-one")
+    } else {
+      classList.push("dim-unclear")
+    } 
     
     var middlePiece = 'class="pill';
     for (var c = 0; c < classList.Length; c++) {
