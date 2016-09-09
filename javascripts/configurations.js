@@ -12,35 +12,41 @@
 var configs =
 
 [['*Fano', [[1, 2, 3], [3, 6, 4], [1, 5, 4], [1, 7, 6], [2, 7, 4], [3, 7, 5], [2, 5, 6]],
-'The Fano plane. n(q) = a(q), where a(q) = 1 when 2|q and =0 otherwise.', 168, ['?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?'],
+'The Fano plane. n(q) = a(q), where a(q) = 1 when 2|q and =0 otherwise.', 168, [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0],
 "-", true, "7point"],
 
 ['*Mobius-Kantor', [[1, 2, 3], [3, 4, 5], [5, 6, 7], [3, 7, 8], [1, 5, 8], [2, 6, 8], [1, 6, 4], [2, 7, 4]],
-'The Mobius-Kantor configuration. n(q) = b(q), where b(q) is the number of roots of x^2 + x + 1', 48, ['?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?'],
+'The Mobius-Kantor configuration. n(q) = b(q), where b(q) is the number of roots of x^2 + x + 1', 48, [1, 2, 0, 2, 0, 1, 0, 2, 2, 0, 2],
 "-", true, "8point"],
 
 ['*9 Point 1', [[1, 2, 3], [1, 5, 9], [1, 4, 8], [2, 4, 7], [2, 6, 9], [3, 5, 7], [3, 6, 8], [4, 5, 6], [7, 8, 9]],
-'The Pappus Configuration. n(q) = #(x,y): x ne 0,1; y ne 0,1; xy - 1 ne 0; x + y - 1 ne 0; x + y - xy ne 0; simplifies to (q - 2 - b(q))(q - 5) + (q - 3)b(q), where b(q) is the number of roots of x^2 + x + 1 over F_q. Note that the count given by Iampolskaia, Skorobogatov, and Sorokin is incorrect.', 108, ['?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?'],
+'The Pappus Configuration. n(q) = #(x,y): x ne 0,1; y ne 0,1; xy - 1 ne 0; x + y - 1 ne 0; x + y - xy ne 0; simplifies to (q - 2 - b(q))(q - 5) + (q - 3)b(q), where b(q) is the number of roots of x^2 + x + 1 over F_q. Note that the count given by Iampolskaia, Skorobogatov, and Sorokin is incorrect.', 108, 
+[0, 2, 0, 14, 18, 30, 54, 92, 158, 180, 242],
 "-", true, "9point"],
 
 ['9 Point 2', [[1, 2, 3], [3, 4, 5], [1, 5, 6], [1, 7, 8], [3, 8, 9], [5, 9, 7], [2, 7, 6], [2, 8, 4], [4, 9, 6]],
-'n(q) = q - 2 - b(q), where b(q) is the number of roots of x^2 + x + 1', 9, ['?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?'],
+'n(q) = q - 2 - b(q), where b(q) is the number of roots of x^2 + x + 1', 9,
+[0,0,3,3,6,6,9,9,12,15,15],
 "-", true, "9point"],
 
 ['9 Point 3', [[1, 2, 3], [3, 4, 5], [5, 6, 1], [1, 8, 4], [2, 7, 5], [2, 8, 9], [3, 9, 6], [4, 9, 7], [6, 7, 8]],
-'n(q) = (q - 3)(1 - a(q)), where a(q) = 1 when 2 | q and a(q) = 0 otherwise', 12, ['?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?'],
+'n(q) = (q - 3)(1 - a(q)), where a(q) = 1 when 2 | q and a(q) = 0 otherwise', 12,
+[0,0,2,4,0,6,8,10,0,14,16],
 "-", true, "9point"],
 
 ['9 Point 4', [[1, 2, 3], [3, 4, 5], [5, 6, 1], [1, 8, 4], [2, 7, 5], [2, 8, 9], [3, 9, 6], [4, 2, 6], [4, 9, 7], [6, 7, 8]],
-'n(q) = (q - 2)a(q), where a(q) = 1 when 2 | q and a(q) = 0 otherwise.', 12, ['?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?'],
+'n(q) = (q - 2)a(q), where a(q) = 1 when 2 | q and a(q) = 0 otherwise.', 12, 
+[0,2,0,0,6,0,0,0,14,0,0],
 "-", true, "9point"],
 
 ['9 Point 5', [[1, 2, 3], [3, 4, 5], [5, 6, 1], [1, 7, 4], [2, 7, 6], [2, 8, 4], [3, 8, 6], [4, 9, 6], [2, 9, 5], [7, 8, 9]],
-'n(q) = e(q) - a(q), where a(q) = 1 when 2|q and =0 otherwise, and e(q) is the number of roots of x^2 + 1', 6, ['?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?'],
+'n(q) = e(q) - a(q), where a(q) = 1 when 2|q and =0 otherwise, and e(q) is the number of roots of x^2 + 1', 6,
+[0,0,2,0,0,2,0,2,0,2,0],
 "-", true, "9point"],
 
 ['9 Point 6', [[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 8], [1, 5, 9], [2, 4, 7], [2, 5, 8], [2, 6, 9], [3, 5, 7], [3, 6, 8]],
-'n(q) = q - 2 - b(q),  where b(q) is the number of roots of x^2 + x + 1', 36, ['?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?'],
+'n(q) = q - 2 - b(q),  where b(q) is the number of roots of x^2 + x + 1', 36,
+[0,0,3,3,6,6,9,9,12,15,15],
 "-", true, "9point"],
 
 ['9 Point 7', [[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 8], [1, 5, 9], [2, 4, 7], [2, 5, 8], [2, 6, 9], [3, 5, 7], [3, 6, 8], [1, 7, 6]],
@@ -48,15 +54,18 @@ var configs =
 "-", false, "9point"],
 
 ['*9 Point 8', [[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 8], [1, 5, 9], [2, 4, 7], [2, 5, 8], [2, 6, 9], [3, 5, 7], [3, 6, 8], [1, 7, 6], [3, 9, 4]],
-'Affine Geometry AG(2,3). n(q) = b(q),  where b(q) is the number of roots of x^2 + x + 1', 216, ['?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?'],
+'Affine Geometry AG(2,3). n(q) = b(q),  where b(q) is the number of roots of x^2 + x + 1', 216,
+[1,2,0,2,0,1,0,2,2,0,2],
 "-", true, "9point"],
 
 ['9 Point 9', [[1, 2, 3], [3, 4, 5], [1, 5, 6, 7], [1, 4, 8], [2, 6, 8], [2, 5, 9], [3, 7, 8], [3, 6, 9], [4, 7, 9]],
-'n(q) = d(q), where d(q) is the number of roots of x^2 + x - 1', 4, ['?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?'],
+'n(q) = d(q), where d(q) is the number of roots of x^2 + x - 1', 4,
+[0,2,1,0,0,2,2,0,2,0,2],
 "-", true, "9point"],
 
 ['9 Point 10', [[1, 2, 3, 4], [4, 5, 6, 7], [3, 7, 9], [2, 7, 8], [1, 6, 8], [1, 5, 9], [2, 6, 9], [3, 5, 8], [4, 8, 9]],
-'n(q) = c(q), where c(q) =1 when 3|q, and =0 otherwise.', 12, ['?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?'],
+'n(q) = c(q), where c(q) =1 when 3|q, and =0 otherwise.', 12, 
+[1,0,0,0,0,1,0,0,0,0,0],
 "-", true, "9point"],
 
 ['*ConfigDual-9-4', [[1, 3, 4], [1, 2, 7], [1, 5, 6, 8], [2, 3, 5], [10, 5, 9], [10, 4, 6], [6, 7, 9], [10, 3, 7, 8], [2, 4, 8, 9]],
