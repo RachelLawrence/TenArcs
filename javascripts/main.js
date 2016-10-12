@@ -157,6 +157,11 @@ function showSelfDual () {
   $(".selfdual").show();
 }
 
+function showHighlySymmetric() {
+  $(".pill").hide();
+  $(".highly-symmetric").show();
+}
+
 function showAll() {
   $(".pill").show();
 }
