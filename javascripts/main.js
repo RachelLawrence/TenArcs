@@ -104,6 +104,11 @@ $(function() {
   };
 });
 
+function showClassical() {
+  $(".pill").hide();
+  $(".classical").show(); 
+}
+
 function showDim( value ) {
   $(".pill").hide();
   if (value == 0) {
