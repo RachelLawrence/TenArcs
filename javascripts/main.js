@@ -149,6 +149,11 @@ function showNLines (value) {
   $("." + value + "lines").show();
 }
 
+function showSelfDual () {
+  $(".pill").hide();
+  $(".selfdual").show();
+}
+
 function showAll() {
   $(".pill").show();
 }
