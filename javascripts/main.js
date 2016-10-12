@@ -167,6 +167,11 @@ function showHighlySymmetric() {
   $(".highly-symmetric").show();
 }
 
+function showWord( word ) {
+  $(".pill").hide();
+  $("." + word).show();
+}
+
 function showAll() {
   $(".pill").show();
 }
