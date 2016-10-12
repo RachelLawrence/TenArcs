@@ -13,26 +13,26 @@ var configs =
 
 [['*Fano', [[1, 2, 3], [3, 6, 4], [1, 5, 4], [1, 7, 6], [2, 7, 4], [3, 7, 5], [2, 5, 6]],
 'The Fano plane. n(q) = a(q), where a(q) = 1 when 2|q and =0 otherwise. Self-dual.', 168, [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0],
-"-", true, "7point selfdual"],
+"-", true, "7point selfdual classical"],
 
 ['*Mobius-Kantor', [[1, 2, 3], [3, 4, 5], [5, 6, 7], [3, 7, 8], [1, 5, 8], [2, 6, 8], [1, 6, 4], [2, 7, 4]],
 'The Mobius-Kantor configuration. n(q) = b(q), where b(q) is the number of roots of x^2 + x + 1. Self-dual.', 48, [1, 2, 0, 2, 0, 1, 0, 2, 2, 0, 2],
-"-", true, "8point selfdual"],
+"-", true, "8point selfdual classical"],
 
 ['*9 Point 1', [[1, 2, 3], [1, 5, 9], [1, 4, 8], [2, 4, 7], [2, 6, 9], [3, 5, 7], [3, 6, 8], [4, 5, 6], [7, 8, 9]],
 'The Pappus Configuration. n(q) = #(x,y): x ne 0,1; y ne 0,1; xy - 1 ne 0; x + y - 1 ne 0; x + y - xy ne 0; simplifies to (q - 2 - b(q))(q - 5) + (q - 3)b(q), where b(q) is the number of roots of x^2 + x + 1 over F_q. Note that the count given by Iampolskaia, Skorobogatov, and Sorokin is incorrect. Self-dual.', 108, 
 [0, 2, 0, 14, 18, 30, 54, 92, 158, 180, 242],
-"-", true, "9point selfdual"],
+"-", true, "9point selfdual classical"],
 
 ['9 Point 2', [[1, 2, 3], [3, 4, 5], [1, 5, 6], [1, 7, 8], [3, 8, 9], [5, 9, 7], [2, 7, 6], [2, 8, 4], [4, 9, 6]],
 'n(q) = q - 2 - b(q), where b(q) is the number of roots of x^2 + x + 1. Self-dual.', 9,
 [0,0,3,3,6,6,9,9,12,15,15],
-"-", true, "9point selfdual"],
+"-", true, "9point selfdual classical"],
 
 ['9 Point 3', [[1, 2, 3], [3, 4, 5], [5, 6, 1], [1, 8, 4], [2, 7, 5], [2, 8, 9], [3, 9, 6], [4, 9, 7], [6, 7, 8]],
 'n(q) = (q - 3)(1 - a(q)), where a(q) = 1 when 2 | q and a(q) = 0 otherwise. Self-dual.', 12,
 [0,0,2,4,0,6,8,10,0,14,16],
-"-", true, "9point selfdual"],
+"-", true, "9point selfdual classical"],
 
 ['9 Point 4', [[1, 2, 3], [3, 4, 5], [5, 6, 1], [1, 8, 4], [2, 7, 5], [2, 8, 9], [3, 9, 6], [4, 2, 6], [4, 9, 7], [6, 7, 8]],
 'n(q) = (q - 2)a(q), where a(q) = 1 when 2 | q and a(q) = 0 otherwise. Dual to Config #13.', 12, 
@@ -82,43 +82,43 @@ var configs =
 
 ['*Con-10-0 #1 (Desargues)', [[1, 2, 3], [1, 4, 5], [1, 6, 7], [9, 10, 8], [2, 4, 8], [3, 5, 8], [9, 2, 6], [9, 3, 7], [10, 4, 6], [10, 5, 7]],
 'Elkies has result. Self-dual.', 120, [0, 0, 1, 15, 0, 90, 259, 585, 1344, 1885, 2955],
-"?", true, "selfdual"],
+"?", true, "selfdual classical"],
 
 ['Con-10-0 #2', [[1, 2, 3], [1, 4, 5], [1, 6, 7], [9, 10, 8], [2, 4, 8], [3, 7, 8], [9, 2, 6], [9, 3, 5], [10, 4, 6], [10, 5, 7]],
 'Elkies has result. Self-dual.', 12, [0, 0, 0, 6, 0, 18, 42, 72, 0, 156, 210],
-"?", "-", "selfdual"],
+"?", "-", "selfdual classical"],
 
 ['Con-10-0 #3', [[1, 2, 3], [1, 4, 5], [1, 6, 7], [9, 10, 8], [2, 4, 8], [3, 6, 8], [9, 2, 7], [9, 3, 5], [10, 4, 6], [10, 5, 7]],
 'Elkies has result. Self-dual.', 4, [0, 0, 0, 4, 12, 16, 32, 68, 144, 144, 196],
-"?", "-", "selfdual"],
+"?", "-", "selfdual classical"],
 
 ['Con-10-0 #4', [[1, 2, 3], [1, 4, 5], [1, 6, 7], [9, 10, 8], [2, 4, 8], [3, 6, 8], [9, 2, 5], [9, 3, 7], [10, 4, 6], [10, 5, 7]],
 'Elkies has result. Self-dual.', 24, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-"?", "-", "selfdual"],
+"?", "-", "selfdual classical"],
 
 ['Con-10-0 #5', [[1, 2, 3], [1, 4, 5], [1, 6, 7], [9, 10, 8], [2, 4, 8], [3, 7, 8], [9, 2, 5], [9, 4, 6], [10, 3, 6], [10, 5, 7]],
 'Elkies has result. Self-dual.', 2, [0, 0, 0, 1, 12, 24, 30, 68, 88, 144, 200],
-"?", "-", "selfdual"],
+"?", "-", "selfdual classical"],
 
 ['Con-10-0 #6', [[1, 2, 3], [1, 4, 5], [1, 6, 7], [9, 10, 8], [2, 4, 8], [3, 7, 8], [9, 2, 6], [9, 5, 7], [10, 3, 5], [10, 4, 6]],
 'Elkies has result. Self-dual.', 6, [0, 0, 0, 3, 6, 18, 45, 57, 108, 153, 189],
-"?", "-", "selfdual"],
+"?", "-", "selfdual classical"],
 
 ['Con-10-0 #7', [[1, 2, 3], [1, 4, 5], [1, 6, 7], [9, 2, 8], [10, 4, 8], [9, 10, 6], [5, 7, 8], [9, 3, 5], [10, 3, 7], [2, 4, 6]],
 'Elkies has result. Self-dual.', 3, [0, 0, 0, 4, 9, 18, 40, 61, 120, 142, 202],
-"?", "-", "selfdual"],
+"?", "-", "selfdual classical"],
 
 ['Con-10-0 #8', [[1, 2, 3], [1, 4, 5], [1, 6, 7], [9, 3, 8], [10, 5, 8], [9, 10, 7], [2, 7, 8], [9, 5, 6], [10, 3, 4], [2, 4, 6]],
 'Elkies has result. Self-dual.', 3, [0, 0, 0, 3, 0, 6, 53, 63, 120, 143, 167],
-"?", "-", "selfdual"],
+"?", "-", "selfdual classical"],
 
 ['Con-10-0 #9', [[1, 2, 3], [1, 4, 5], [1, 6, 7], [9, 2, 8], [10, 4, 8], [9, 10, 6], [5, 7, 8], [9, 3, 5], [10, 2, 7], [3, 4, 6]],
 'Elkies has result. Self-dual.', 4, [0, 0, 0, 1, 12, 18, 30, 68, 88, 144, 200],
-"?", "-", "selfdual"],
+"?", "-", "selfdual classical"],
 
 ['Con-10-0 #10', [[1, 2, 3], [1, 4, 5], [1, 6, 7], [3, 8, 9], [10, 2, 8], [10, 7, 9], [5, 7, 8], [5, 6, 9], [10, 3, 4], [2, 4, 6]],
 'Elkies has result. Self-dual.', 10, [0, 0, 0, 5, 0, 24, 26, 65, 144, 145, 197],
-"?", "-", "selfdual"],
+"?", "-", "selfdual classical"],
 
 ['Con-10-1-R #1', [[1, 10, 2, 3], [1, 4, 5], [1, 6, 7], [9, 10, 8], [2, 4, 8], [3, 5, 8], [9, 2, 6], [9, 3, 7], [10, 4, 6], [10, 5, 7]],
 'n(q)=(q-2)(q-4) if 2|q, (q-3)(q-6) if 3|q, (q-4)(q-5) otherwise. Self-dual.', 12, [0, 0, 0, 6, 24, 18, 42, 72, 168, 156, 210],
