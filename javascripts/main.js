@@ -90,6 +90,9 @@ $(function() {
     if (configs[i][6] == false) {
       item = 'realizable-no ' + item;
     }
+    if (configs[i][3] >= 16) {
+      item = 'highly-symmetric ' + item;
+    }
     item = '<a class="' + item;
     $(item)
       .appendTo($sidebar)
