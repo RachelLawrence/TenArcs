@@ -1,12 +1,12 @@
 'use strict';
 
 function times(n, iterator) {
-    var accum = Array(Math.max(0, n));
+    var accum = new Array(Math.max(0, n));
     for (var i = 0; i < n; i++) {
         accum[i] = iterator(i);
     }
     return accum;
-};
+}
 
 $(function () {
     var $main = $(".config-panel");
@@ -26,16 +26,9 @@ $(function () {
         $main.find('.sr tbody tr').remove();
 
         var $mainSrTbody = $main.find('.sr tbody');
-        var realizable = false;
         for (var j = 0; j < finiteFieldOrders.length; j++) {
-            if (configs[i][4][j] != 0) {
-                var $row = $("<tr><td>" + j + "</td><td>" + configs[i][4][j] + "</td></tr>");
-                $mainSrTbody.append($row);
-                realizable = true;
-            }
-        }
-        if (!realizable) {
-            $mainSrTbody.append($("<tr><td colspan='2'>Not realizable!</td></tr>"));
+            var $row = $("<tr><td>" + finiteFieldOrders[j] + "</td><td>" + configs[i][4][j] + "</td></tr>");
+            $mainSrTbody.append($row);
         }
 
         // Clear table
