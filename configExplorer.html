@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="10-Arcs : Counting 10-Arcs in the Projective Plane over a Finite Field">
@@ -10,125 +10,88 @@
     <script src="javascripts/configurations.js" type="text/javascript"></script>
     <script src="javascripts/main.js" type="text/javascript"></script>
     <title>10-Arcs</title>
-  </head>
-  <body>
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-      <header class="inner">
+</head>
+<body>
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+    <header class="inner">
         <a id="forkme_banner" href="https://github.com/RachelLawrence/TenArcs">View on GitHub</a>
         <h1 id="project_title">Configurations</h1>
         <h2 id="project_tagline">Superfigurations on up to 10 Points</h2>
         <section id="downloads">
-          <a class="zip_download_link" href="https://github.com/RachelLawrence/TenArcs/zipball/master">Download this project as a .zip file</a>
-          <a class="tar_download_link" href="https://github.com/RachelLawrence/TenArcs/tarball/master">Download this project as a tar.gz file</a>
+            <a class="zip_download_link" href="https://github.com/RachelLawrence/TenArcs/zipball/master">Download this
+                project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/RachelLawrence/TenArcs/tarball/master">Download this
+                project as a tar.gz file</a>
         </section>
-      </header>
-    </div>
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner config-panel">
-        
-        <button onclick="showClassical()">Show classical configurations</button>
-        <p></p>
-        <button onclick="showDim(0)">Show dimension 0</button>
-        <button onclick="showDim(1)">Show dimension 1</button>
-        <button onclick="showDim('?')">Show dimension ?</button>
-        <p></p>
-        <button onclick="showNPoints(7)">Show 7-point configs</button>
-        <button onclick="showNPoints(8)">Show 8-point configs</button>
-        <button onclick="showNPoints(9)">Show 9-point configs</button>
-        <button onclick="showNPoints(10)">Show 10-point configs</button>
-        <p></p>
-        <button onclick="showNLines(7)">Show 7-line configs</button>
-        <button onclick="showNLines(8)">Show 8-line configs</button>
-        <button onclick="showNLines(9)">Show 9-line configs</button>
-        <button onclick="showNLines(10)">Show 10-line configs</button>
-        <button onclick="showNLines(11)">Show 11-line configs</button>
-        <button onclick="showNLines(12)">Show 12-line configs</button>
-        <button onclick="showNLines(13)">Show 13-line configs</button>
-        <p></p>
-        <button onclick="showRealizable(true)">Show realizable</button>
-        <button onclick="showRealizable(false)">Show unrealizable</button>
-        <button onclick="showWord('few-chars')">Realizable in finitely many characteristics </button>
-        <p></p>
-        <button onclick="showSelfDual()">Show self-duals</button>
-        <button onclick="showHighlySymmetric()">Show with many automorphisms</button>
-        <p></p>
-        <button onclick="showAll()">Show all</button>
-        
-        <p class="nav-pills"></p>
-        
-        <h3 class="config-name">Zoo</h3>
-        <p class="config-description">Choose a number above to see more information about a configuration.</p>
-        
-        
-        <h4>Points</h4>
-        <table class="points">
-          
-        </table>
-        <h4>Automorphism Group Cardinality</h4>
-        <p class="config-automorphism-group-cardinality"> </p>
-        
-        <h4>Realizability over small fields</h4>
-        
-        <table class="sr">
-          <tr>
-            <th>Order of Finite Field</th>
-            <th>Number of Realizations up to Projective Equivalence</th>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td class="config-small-realizability-3"></td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td class="config-small-realizability-4"></td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td class="config-small-realizability-5"></td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td class="config-small-realizability-7"></td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td class="config-small-realizability-8"></td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td class="config-small-realizability-9"></td>
-          </tr>
-          <tr>
-            <td>11</td>
-            <td class="config-small-realizability-11"></td>
-          </tr>
-          <tr>
-            <td>13</td>
-            <td class="config-small-realizability-13"></td>
-          </tr>
-          <tr>
-            <td>16</td>
-            <td class="config-small-realizability-16"></td>
-          </tr>
-          <tr>
-            <td>17</td>
-            <td class="config-small-realizability-17"></td>
-          </tr>
-          <tr>
-            <td>19</td>
-            <td class="config-small-realizability-19"></td>
-          </tr>
-        </table>
-      </section>
-    </div>
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
+    </header>
+</div>
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner config-panel">
+        <h3>Configuration Zoo</h3>
+        <p>Choose a number above to see more information about a configuration.</p>
+
+        <div id="filter-box">
+            <select size="20" multiple='multiple' title="select which configurations to show" name="config-choice"
+                    id="config-choice">
+                <option data-show="classical">Classical configurations</option>
+                <option data-show="dim-0">Dimension 0</option>
+                <option data-show="dim-1">Dimension 1</option>
+                <option data-show="dim-unknown">Dimension ?</option>
+                <option data-show="7point">7-point configs</option>
+                <option data-show="8point">8-point configs</option>
+                <option data-show="9point">9-point configs</option>
+                <option data-show="10point">10-point configs</option>
+                <option data-show="7lines">7-line configs</option>
+                <option data-show="8lines">8-line configs</option>
+                <option data-show="9lines">9-line configs</option>
+                <option data-show="10lines">10-line configs</option>
+                <option data-show="11lines">11-line configs</option>
+                <option data-show="12lines">12-line configs</option>
+                <option data-show="13lines">13-line configs</option>
+                <option data-show="realizable">Realizable</option>
+                <option data-show="unrealizable">Unrealizable</option>
+                <option data-show="few-chars">Realizable in finitely many characteristics</option>
+                <option data-show="selfdual">Self-duals</option>
+                <option data-show="highly-symmetric">With many automorphisms</option>
+            </select>
+            <p class="nav-pills"></p>
+        </div>
+
+        <div class="config-info-box" style="display: none;">
+            <h3 class="config-name">Zoo</h3>
+            <p class="config-description">Choose a number above to see more information about a configuration.</p>
+
+            <h4>Points</h4>
+            <table class="points">
+
+            </table>
+            <h4>Automorphism Group Cardinality</h4>
+            <p class="config-automorphism-group-cardinality"></p>
+
+            <h4>Realizability over small fields</h4>
+
+            <table class="sr">
+                <thead>
+                <tr>
+                    <th>Order of Finite Field</th>
+                    <th>Number of Realizations up to Projective Equivalence</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>
+
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+    <footer class="inner">
         <p class="copyright">10-Arcs maintained by <a href="https://github.com/RachelLawrence">RachelLawrence</a></p>
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-  </body>
+    </footer>
+</div>
+</body>
 </html>

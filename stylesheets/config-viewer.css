@@ -1,11 +1,15 @@
-.nav-pills {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
+#filter-box {
+    display: flex;
+    margin-top: 1em;
 }
 
-.nav-pills a {
-	display: block;
+.nav-pills {
+	flex: 1;
+    margin:0;
+}
+
+.pill {
+	display: inline-block;
 	cursor: pointer;
 	width: 2em;
 	height: 2em;
@@ -23,15 +27,6 @@
 	text-align: center;
 	border: 1px solid #ccc;
 	font-weight: bold;
-}
-
-.dim-one {
-}
-
-.dim-zero {
-}
-
-.dim-unclear {
 }
 
 .navig {

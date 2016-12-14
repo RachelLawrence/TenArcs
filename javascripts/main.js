@@ -1,177 +1,121 @@
 'use strict';
 
 function times(n, iterator) {
-  var accum = Array(Math.max(0, n));
-  for (var i = 0; i < n; i++) {
-    accum[i] = iterator(i);
-  }
-  return accum;
+    var accum = Array(Math.max(0, n));
+    for (var i = 0; i < n; i++) {
+        accum[i] = iterator(i);
+    }
+    return accum;
 };
 
-$(function() {
-  var $main = $(".config-panel");
+$(function () {
+    var $main = $(".config-panel");
 
-  function render(i) {
-    // Update Name
-    $main.find('.config-name').text("Configuration #" + (i + 1));
+    function render(i) {
+        // Update Name
+        $main.find('.config-name').text("Configuration #" + (i + 1));
 
-    // Update description
-    $main.find('.config-description').text(configs[i][2]);
-    
-    // Update auto groups
-    $main.find('.config-automorphism-group-cardinality').text(configs[i][3]);
-    
-    // Update small realizability
-    $main.find('.config-small-realizability-3').text(configs[i][4][0]);
-    $main.find('.config-small-realizability-4').text(configs[i][4][1]);
-    $main.find('.config-small-realizability-5').text(configs[i][4][2]);
-    $main.find('.config-small-realizability-7').text(configs[i][4][3]);
-    $main.find('.config-small-realizability-8').text(configs[i][4][4]);
-    $main.find('.config-small-realizability-9').text(configs[i][4][5]);
-    $main.find('.config-small-realizability-11').text(configs[i][4][6]);
-    $main.find('.config-small-realizability-13').text(configs[i][4][7]);
-    $main.find('.config-small-realizability-16').text(configs[i][4][8]);
-    $main.find('.config-small-realizability-17').text(configs[i][4][9]);
-    $main.find('.config-small-realizability-19').text(configs[i][4][10]);
+        // Update description
+        $main.find('.config-description').text(configs[i][2]);
 
-    // Clear table
-    var $table = $main.find('table.points');
-    $table.html('');
+        // Update auto groups
+        $main.find('.config-automorphism-group-cardinality').text(configs[i][3]);
 
-    // Compute columns
-    var points = configs[i][1];
-    var nCols = Math.max.apply(null, points.map(function(x) {
-      return x.length;
-    }));
+        // Update small realizability
+        var finiteFieldOrders = [3, 4, 5, 7, 8, 9, 11, 13, 16, 17, 19];
+        $main.find('.sr tbody tr').remove();
 
-    // Generate header
-    var $headRow = $("<tr>");
-    $("<th>Line Number</th>").appendTo($headRow);
-    for (var i = 1; i <= nCols; i++) {
-      $("<th>Point " + i + "</th>").appendTo($headRow);
-    }
-    $headRow.appendTo($table);
+        var $mainSrTbody = $main.find('.sr tbody');
+        var realizable = false;
+        for (var j = 0; j < finiteFieldOrders.length; j++) {
+            if (configs[i][4][j] != 0) {
+                var $row = $("<tr><td>" + j + "</td><td>" + configs[i][4][j] + "</td></tr>");
+                $mainSrTbody.append($row);
+                realizable = true;
+            }
+        }
+        if (!realizable) {
+            $mainSrTbody.append($("<tr><td colspan='2'>Not realizable!</td></tr>"));
+        }
 
-    // Populate
-    for (var i = 0; i < points.length; i++) {
-      var $curRow = $("<tr>");
+        // Clear table
+        var $table = $main.find('table.points');
+        $table.html('');
 
-      $("<td>Line " + (i + 1) + "</td>").appendTo($curRow);
-      var $cells = times(nCols, function(j) {
-        return $("<td>").text(j < points[i].length ? points[i][j] : "--");
-      });
-      $cells.forEach(function($cell) {
-        $cell.appendTo($curRow);
-      });
-      $curRow.appendTo($table);
-    }
-  }
+        // Compute columns
+        var points = configs[i][1];
+        var nCols = Math.max.apply(null, points.map(function (x) {
+            return x.length;
+        }));
 
-  var $sidebar = $(".nav-pills");
-  for (var i = 0; i < NumberOfConfigurations; i++) {
-    
-    var item = 'pill">' + (i+1) + '</a>';
-    item = configs[i][7] + ' ' + item;
-    item = configs[i][1].length + 'lines ' + item;
-    if (configs[i][5] == 0) {
-      item = 'dim-zero ' + item;
-    } else if (configs[i][5] == 1) {
-      item = 'dim-one ' + item;
+        // Generate header
+        var $headRow = $("<tr>");
+        $("<th>Line Number</th>").appendTo($headRow);
+        for (var i = 1; i <= nCols; i++) {
+            $("<th>Point " + i + "</th>").appendTo($headRow);
+        }
+        $headRow.appendTo($table);
+
+        // Populate
+        for (var i = 0; i < points.length; i++) {
+            var $curRow = $("<tr>");
+
+            $("<td>Line " + (i + 1) + "</td>").appendTo($curRow);
+            var $cells = times(nCols, function (j) {
+                return $("<td>").text(j < points[i].length ? points[i][j] : "--");
+            });
+            $cells.forEach(function ($cell) {
+                $cell.appendTo($curRow);
+            });
+            $curRow.appendTo($table);
+        }
+
+        $('.config-info-box').show();
     }
-    else {
-      item = 'dim-unclear ' + item;
+
+    var $sidebar = $(".nav-pills");
+    for (var i = 0; i < NumberOfConfigurations; i++) {
+        var $item = $("<a>");
+        $item.text(i + 1);
+
+        var traits = ['pill'];
+        if (configs[i][7]) {
+            traits = traits.concat(configs[i][7].split(' '));
+        }
+
+        var numLines = configs[i][1].length;
+        traits.push(numLines + 'lines');
+
+        var dim = configs[i][5] <= 1 ? configs[i][5] : "unknown";
+        traits.push('dim-' + dim);
+
+        var realizable = configs[i][6] == '-' ? 'maybe-' : configs[i][6] === false ? 'un' : '';
+        traits.push(realizable + 'realizable');
+
+        if (configs[i][3] >= 16) {
+            traits.push('highly-symmetric');
+        }
+
+        for (var j = 0; j < traits.length; j++) {
+            $item.addClass(traits[j]);
+        }
+
+        $item.appendTo($sidebar)
+            .click((function (_i) {
+                return function () {
+                    render(_i);
+                };
+            })(i));
     }
-    if (configs[i][6] == '-') {
-      item = 'realizable-unclear ' + item;
-    }
-    if (configs[i][6]) {
-      item = 'realizable-yes ' + item;
-    }
-    if (configs[i][6] == false) {
-      item = 'realizable-no ' + item;
-    }
-    if (configs[i][3] >= 16) {
-      item = 'highly-symmetric ' + item;
-    }
-    item = '<a class="' + item;
-    $(item)
-      .appendTo($sidebar)
-      .click((function(_i) {
-        return function(e) {
-          render(_i);
-        };
-      })(i));
-  };
+
+    $('.pill').not('.7point').not('.8point').not('.9point').addClass('10point');
+
+    $('#config-choice').change(function () {
+        $('.pill').hide();
+        $(this).find('option:selected').each(function () {
+            var cls = $(this).attr('data-show');
+            $('.' + cls).show();
+            console.log(cls)
+        });
+    });
 });
-
-function showClassical() {
-  $(".pill").hide();
-  $(".classical").show(); 
-}
-
-function showDim( value ) {
-  $(".pill").hide();
-  if (value == 0) {
-    $(".dim-zero").show();
-  } else if (value == 1) {
-    $(".dim-one").show();
-  }
-  else {
-    $(".dim-unclear").show();
-  } 
-}
-
-function showRealizable( value ) {
-  $(".pill").hide();
-  if (value == '?') {
-    $(".realizable-unclear").show();
-  } else if (value) {
-    $(".realizable-yes").show();
-  }
-  else {
-    $(".realizable-no").show();
-  } 
-}
-
-function showNPoints (value) {
-  $(".pill").hide();
-  if (value == 7) {
-    $(".7point").show();
-  }
-  if (value == 8) {
-    $(".8point").show();
-  }
-  if (value == 9) {
-    $(".9point").show();
-  }
-  if (value == 10) {
-    $(".pill").show();
-    $(".7point").hide();
-    $(".8point").hide();
-    $(".9point").hide();
-  }
-}
-
-function showNLines (value) {
-  $(".pill").hide();
-  $("." + value + "lines").show();
-}
-
-function showSelfDual () {
-  $(".pill").hide();
-  $(".selfdual").show();
-}
-
-function showHighlySymmetric() {
-  $(".pill").hide();
-  $(".highly-symmetric").show();
-}
-
-function showWord( word ) {
-  $(".pill").hide();
-  $("." + word).show();
-}
-
-function showAll() {
-  $(".pill").show();
-}
